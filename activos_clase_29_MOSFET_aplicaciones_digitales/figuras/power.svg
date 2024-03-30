@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="106.84058mm"
+   height="50.359745mm"
+   viewBox="0 0 106.84058 50.359745"
+   version="1.1"
+   id="svg6180"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   sodipodi:docname="power.svg">
+  <defs
+     id="defs6174" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.7"
+     inkscape:cx="529.8031"
+     inkscape:cy="-72.853939"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata6177">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(156.98576,-31.42727)">
+    <text
+       y="60.219906"
+       x="-155.73138"
+       style="font-variant:normal;font-weight:normal;font-size:3.06606221px;font-family:Arial;-inkscape-font-specification:Arial;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.35277775"
+       id="text5508">
+      <tspan
+         style="stroke-width:0.35277775"
+         x="-155.73138 -153.51738 -151.81235 -150.1073 -148.57397 -146.86893 -144.31459 -142.60956"
+         y="60.219906"
+         sodipodi:role="line"
+         id="tspan5504">Consumo</tspan>
+      <tspan
+         style="stroke-width:0.35277775"
+         x="-157.09056 -155.38583 -153.68111 -152.83243 -151.12769 -149.42296 -148.5706 -146.86586 -145.16113 -143.6281 -142.94743"
+         y="64.645149"
+         sodipodi:role="line"
+         id="tspan5506">de potencia</tspan>
+    </text>
+    <path
+       d="m -139.62443,59.371509 9.91376,-9.014178 0.25541,0.275873 -9.91376,9.024407 z m 9.51512,-9.177514 1.23648,-0.347486 -0.47025,1.205795"
+       style="fill:#ff3300;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.35277775"
+       id="path5510"
+       inkscape:connector-curvature="0" />
+    <path
+       d="m -140.33987,62.274165 8.98349,8.993717 -0.26564,0.265641 -8.99372,-8.983487 z m 9.11649,8.584846 0.40887,1.216379 -1.21638,-0.39864"
+       style="fill:#ff3300;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.35277775"
+       id="path5512"
+       inkscape:connector-curvature="0" />
+    <text
+       y="47.659286"
+       x="-130.59999"
+       style="font-variant:normal;font-weight:normal;font-size:3.06606221px;font-family:Arial;-inkscape-font-specification:Arial;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.35277775"
+       id="text5524">
+      <tspan
+         style="stroke-width:0.35277775"
+         x="-130.59999 -128.55554 -126.85143 -125.99967 -124.29556 -122.59144 -121.05902 -120.37897 -118.67485 -117.82616 -115.78172 -114.2493 -113.39754 -111.69343 -110.84167 -110.16162 -108.6292"
+         y="47.659286"
+         sodipodi:role="line"
+         id="tspan5514">Potencia Estática</tspan>
+      <tspan
+         style="stroke-width:0.35277775"
+         x="-130.56934 -128.52457 -126.82015 -125.96809 -124.26366 -122.55924 -121.02652 -120.34616 -118.64174 -117.79275 -115.57935 -114.89899 -113.19457 -111.49014 -108.93642 -108.25607 -106.72334"
+         y="75.672981"
+         sodipodi:role="line"
+         id="tspan5516">Potencia Dinámica</tspan>
+      <tspan
+         style="stroke-width:0.35277775"
+         x="-96.18866 -93.975571 -92.271454 -91.251068 -90.230682 -89.550629 -87.846519 -86.142395 -85.290649 -83.586533 -82.737839 -81.033722 -79.329613 -78.480919 -77.629166 -75.925056 -74.220932 -72.516815 -71.668129 -69.964012 -68.259895 -67.411209 -65.878792 -64.174675 -61.621262 -59.917137 -58.21302 -56.508911 -55.488518 -54.636772"
+         y="37.030476"
+         sodipodi:role="line"
+         id="tspan5518">Corriente de fuga de compuerta</tspan>
+      <tspan
+         style="stroke-width:0.35277775"
+         x="-96.290756 -94.077057 -92.372322 -91.351326 -90.33033 -89.649666 -87.944939 -86.240204 -85.38784 -83.683105 -82.834419 -81.129692 -79.424965 -78.576271 -77.043243 -75.338509 -73.633789 -71.929054 -69.375015 -67.670296 -66.649292 -64.944565"
+         y="42.825333"
+         sodipodi:role="line"
+         id="tspan5520">Corriente de subumbral</tspan>
+      <tspan
+         style="stroke-width:0.35277775"
+         x="-96.208893 -93.995811 -92.291687 -91.271309 -90.250923 -89.570862 -87.866753 -86.162628 -85.310883 -83.606766 -82.758072 -81.053955 -79.349846 -78.50116 -77.480774 -75.776657 -74.24424 -72.540115 -71.519737 -69.98732 -68.283203 -67.434509 -65.730392 -64.026283 -63.177589 -62.497536 -60.793419 -59.08931 -58.237549 -56.533432 -55.001015 -54.152328 -52.10788"
+         y="48.610073"
+         sodipodi:role="line"
+         id="tspan5522">Corriente de reversa de juntas PN</tspan>
+    </text>
+    <path
+       d="m -96.699493,31.491129 c -1.604785,0 -2.902654,0.796925 -2.902654,1.778 v 7.082719 c 0,0.970845 -1.297873,1.768122 -2.892423,1.768122 1.59455,0 2.892423,0.797278 2.892423,1.768123 v 7.082366 c 0,0.981428 1.297869,1.778353 2.902654,1.778353 m 0,14.492463 c -1.604785,0 -2.902654,0.541515 -2.902654,1.205794 v 4.834115 c 0,0.664281 -1.297873,1.206148 -2.892423,1.206148 1.59455,0 2.892423,0.541512 2.892423,1.205793 v 4.823884 c 0,0.664633 1.297869,1.206148 2.902654,1.206148"
+       style="fill:none;stroke:#000000;stroke-width:0.12770554;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       id="path5526"
+       inkscape:connector-curvature="0" />
+    <text
+       style="font-variant:normal;font-weight:normal;font-size:3.06606221px;font-family:Arial;-inkscape-font-specification:Arial;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.35277775"
+       id="text5536"
+       x="-95.463005"
+       y="71.172562">
+      <tspan
+         style="stroke-width:0.35277775"
+         x="-95.463005 -93.249313 -91.544571 -90.523575 -89.502579 -88.821915 -87.117172 -85.41246 -84.560097 -82.855354 -82.006676 -80.301933 -78.597221 -77.74852 -76.215492 -74.51075 -73.489754 -72.637398 -70.932671 -70.083977 -68.550957 -67.870285 -66.849289 -65.316269 -63.611526 -62.930862 -62.078499"
+         y="71.172562"
+         sodipodi:role="line"
+         id="tspan5528">Corriente de corto circuito</tspan>
+      <tspan
+         style="stroke-width:0.35277775"
+         x="-95.463005 -93.249313 -91.544571 -90.523575 -89.502579 -88.821915 -87.117172 -85.41246 -84.560097 -82.855354 -82.006676 -80.301933 -78.597221 -77.74852 -76.215492 -74.51075 -73.489754 -72.637398 -70.932671 -70.083977 -68.550957 -67.870285 -66.849289 -65.316269 -63.611526 -62.930862 -62.078499"
+         y="71.172562"
+         sodipodi:role="line"
+         id="tspan6147" />
+      <tspan
+         style="stroke-width:0.35277775"
+         x="-95.463005"
+         sodipodi:role="line"
+         id="tspan5532"
+         y="0">Carga capacitiva</tspan>
+      <tspan
+         style="stroke-width:0.35277775"
+         x="-95.463005"
+         sodipodi:role="line"
+         id="tspan5534"
+         y="0" />
+    </text>
+  </g>
+</svg>

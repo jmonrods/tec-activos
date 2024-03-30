@@ -1,0 +1,35 @@
+\documentclass[class=minimal,border=0pt]{standalone}
+\usepackage{tikz}
+\usepackage{amsmath}
+\usetikzlibrary{
+  arrows,
+  calc
+}
+\usepackage{tikz-3dplot}
+\usetikzlibrary{3d}
+\tikzset{>=latex}
+\usetikzlibrary{decorations.markings}
+\usetikzlibrary{shapes.misc}
+
+\begin{document}
+  \begin{tikzpicture}[xscale=0.30, yscale=0.30]
+    %-------------Horizontales-----------
+    \foreach \x in {-11,-7,...,13} {
+        \foreach \y in {-8,-4,...,8} {
+            \draw[line width=1pt](\x,\y)--(2+\x,\y)node[right] {};
+        }
+    }
+    %-------------Verticales-----------
+    \foreach \y in {-11,-7,...,9} {
+        \foreach \x in {-8,-4,...,12} {
+            \draw[line width=1pt](\x,\y)--(\x,\y+2)node[right] {};
+        }
+    }
+    %-------------Circulos---------------
+    \foreach \x in {-8,-4,...,12} {
+            \foreach \y in {-8,-4,...,8} {
+                \draw (\x,\y) circle(1);
+        }
+    }
+  \end{tikzpicture}
+\end{document}

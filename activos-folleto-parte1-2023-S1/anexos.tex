@@ -1,0 +1,144 @@
+\chapter*{Anexos}
+
+\section*{Constantes físicas y materiales}
+\begin{center}
+    %\captionof{table}{Constantes}
+    \label{tab:Ctes}
+    \setlength{\extrarowheight}{9pt}
+    \begin{tabular}{ c | c | c | c }
+      \hline
+      \thead{\large Nombre} &
+      \thead{\large Símbolo} & 
+      \thead{\large Constante} &
+      \thead{\large Unidades}\\
+      \hline
+      %\hline
+      
+      \makecell {
+      \color{gray}{Boltzmann}\\
+      \color{gray}{}\\
+      \color{gray}{Planck}\\
+      \color{gray}{Carga del electrón}\\
+      \color{gray}{Tensión térmica}\\
+      \color{gray}{Concentración intrínseca ($Si$)}\\
+      \color{gray}{Banda prohibida ($Si$)}\\
+      \color{gray}{Permitividad del vacío}\\
+      \color{gray}{}\\
+      \color{gray}{Permitividad del Silicio ($Si$)}\\
+      \color{gray}{Permitividad del Dióxido de Silicio ($SiO_{2}$)}} 
+        
+      
+      & \makecell{
+      \color{gray}{$k$}\\
+      \color{gray}{}\\
+      \color{gray}{$h$}\\
+      \color{gray}{$q$}\\
+      \color{gray}{$kT/q$}\\
+      \color{gray}{$n_{i}$}\\
+      \color{gray}{$E_{g}$}\\
+      \color{gray}{$\varepsilon _{o}$}\\
+      \color{gray}{}\\
+      \color{gray}{$\varepsilon _{Si}$}\\
+      \color{gray}{$\varepsilon _{ox}$}}  
+      
+      & \makecell{
+      \color{gray}{$1.381\times 10^{-23}$}\\
+      \color{gray}{$8.617\times 10^{-5}$}\\
+      \color{gray}{$6.626\times 10^{-34}$}\\
+      \color{gray}{$1.602\times 10^{-19}$}\\
+      \color{gray}{$0.026$}\\
+      \color{gray}{$1\times
+10^{10}$ ($@ T=300K$)}\\
+      \color{gray}{$1.2$ ($@ T=300K$)}\\
+      \color{gray}{$8.854\times
+10^{-12}$}\\
+      \color{gray}{$8.854\times
+10^{-14}$}\\
+      \color{gray}{$11.7 \varepsilon _{o}$}\\
+      \color{gray}{$3.97 \varepsilon _{o}$}
+      }
+      
+      & \makecell{
+      \color{gray}{$J\cdot{}K^{-1}$}\\
+      \color{gray}{$eV\cdot{}K^{-1}$}\\
+      \color{gray}{$J\cdot{}s$}\\
+      \color{gray}{C}\\
+      \color{gray}{V}\\
+      \color{gray}{cm$^{-3}$}\\
+      \color{gray}{eV}\\
+      \color{gray}{C$^{2}$ N$^{-1}$ m$^{-2}$}\\
+      \color{gray}{F cm$^{-1}$}\\
+      \color{gray}{F cm$^{-1}$}\\
+      \color{gray}{F cm$^{-1}$}
+      }
+      
+      \\
+      \hline
+      %\hline
+    \end{tabular}
+\end{center}
+
+\section*{Ecuación de Schrödinger}
+
+La ecuación de onda:
+
+\[ \Psi = e^{i(kx - \omega t)} \]
+
+La primera derivada:
+
+\[ \dfrac{d\Psi}{dx} = ik e^{i(kx - \omega t)} = ik\Psi \]
+
+La segunda derivada:
+
+\[ \dfrac{d^2\Psi}{dx^2} = i^2 k^2 e^{i(kx - \omega t)} = -k^2\Psi \]
+
+La relación de DeBroglie:
+
+\[ k = \dfrac{2\pi}{\lambda} = \dfrac{\rho}{\hbar} \]
+
+Sustituyendo la relación de DeBroglie en la segunda derivada se obtiene:
+
+\[ \dfrac{d^2\Psi}{dx^2} = \dfrac{-\rho^2}{\hbar^2}\Psi \]
+
+Reagrupando términos se obtiene la siguiente expresión:
+
+\[ \boxed{-\hbar^2 \dfrac{d^2\Psi}{dx^2} = \rho^2 \Psi} \]
+
+
+Ahora escribimos la energía como la suma de energía potencial ($P.E.$) más la energía cinética ($K.E.$):
+
+\begin{eqnarray}
+    E = P.E. + K.E. \\
+    E = V + \dfrac{1}{2} m v^2 \\
+\end{eqnarray}
+
+El momento se define como:
+
+\begin{eqnarray}
+    \rho = m v
+\end{eqnarray}
+
+Por lo que la energía se escribe como:
+
+\begin{eqnarray}
+    E = V + \dfrac{\rho^2}{2m} 
+\end{eqnarray}
+
+Ahora se multiplica por la función de onda $\Psi$ a ambos lados:
+
+\begin{eqnarray}
+    E\Psi = V\Psi + \dfrac{\rho^2}{2m}\Psi 
+\end{eqnarray}
+
+Sustituyendo el resultado que teníamos previamente calculado:
+
+\begin{eqnarray}
+    E\Psi = V\Psi + \dfrac{-\hbar}{2m}\dfrac{d^2\Psi}{dx^2} 
+\end{eqnarray}
+
+Reacomodando los términos y extendiendo la definición con el operador de gradiente:
+
+\begin{eqnarray}
+    \boxed{E\Psi = \dfrac{-\hbar}{2m} \nabla \Psi + V\Psi}
+\end{eqnarray}
+

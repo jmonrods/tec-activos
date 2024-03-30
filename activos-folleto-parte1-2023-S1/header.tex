@@ -1,0 +1,109 @@
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=3cm]{geometry}
+\setlength{\headheight}{16pt}
+\newcommand{\dd}[1]{\mathrm{d}#1}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{xcolor}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{kantlipsum}
+\usepackage{listings}
+\usepackage{blindtext}
+\usepackage{textcase}
+\usepackage{lettrine}
+\usepackage{graphicx}
+\usepackage[scientific-notation=true]{siunitx}
+\usepackage{listings}
+\usepackage{graphicx}
+\usepackage{selinput}
+\usepackage{array}
+\usepackage{makecell}
+\usepackage{booktabs}
+\usepackage{ltxtable}
+\usepackage{multirow}
+\usepackage{wrapfig}
+\usepackage{lscape}
+\usepackage{rotating}
+\usepackage{epstopdf}
+\usepackage{longtable,tabu}
+\usepackage[bottom]{footmisc}
+\usepackage[tableposition=below]{caption}
+\usepackage[hyphens]{url}
+
+
+% Marca de agua para distribuir
+%\usepackage{draftwatermark}
+%\SetWatermarkText{\textsc{TEC}} % por defecto Draft 
+%\SetWatermarkScale{3} % para que cubra toda la página
+%\SetWatermarkColor[rgb]{0.75,0.75,0.75}%{0.35,0.55,0.91} % por defecto gris claro
+%\SetWatermarkAngle{65} % respecto a la horizontal
+%\usepackage{blindtext}
+
+
+%\usepackage{tabularx,ragged2e,booktabs,caption}
+%\usepackage{relsize}
+%\usepackage{framed}
+%\usepackage{pdfpages}
+
+
+\colorlet{ColorPink}{red!10}
+
+\usepackage{hyperref}
+
+% Tipos de letra
+%\usepaxkage{fourier}
+% Font packages for Helvetica
+%\usepackage[scaled]{helvet}
+%\renewcommand{\familydefault}{\sfdefault}
+%\usepackage{newtxsf}
+%\usepackage{mathastext}
+%\urlstyle{sf}
+
+% Graphics packages
+\usepackage{float}
+\usepackage{graphicx}
+\graphicspath{{./figuras/}}
+\usepackage[american]{circuitikz}
+
+% Header and footer
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead{}
+\fancyhead[LE,RO]{\thepage}
+\fancyhead[LO]{\rightmark}
+\fancyhead[RE]{\leftmark}
+\fancyfoot{}
+\fancypagestyle{plain}{
+	\fancyhead{}
+	\fancyhead[LE,RO]{\thepage}
+	\fancyhead[LO]{\rightmark}
+	\fancyhead[RE]{\leftmark}
+	\fancyfoot{}
+}
+
+% Chapter and title in one line
+\usepackage{titlesec}
+\titleformat{\chapter}[display]{\centering\huge\bfseries}{\chaptertitlename\ \thechapter}{0em}{}
+
+\usepackage[spanish,es-tabla]{babel}
+\decimalpoint
+
+% Pie de pagina para distribuir
+%\newcommand{\copyrightfooter}{\tiny{\copyright 2020 --- J.J.~Montero-Rodríguez, A.I.~Ruiz-Barquero% \qquad Uso exclusivo ITCR}}
+%\cfoot[\copyrightfooter]{\copyrightfooter}
+%\lfoot{Borrador}
+
+% Entorno para ejemplos
+\usepackage{amsthm}
+\theoremstyle{definition}
+\newtheorem{ejemplo}{Ejemplo}
+
+\usepackage{amsthm}
+\theoremstyle{definition}
+\newtheorem*{solucion}{Solución}
+
+% Entorno para cuadros informativos
+\usepackage{tcolorbox}
+\definecolor{tec-blue}{cmyk}{1, 0.69, 0.08, 0.54, 1.00}
+\definecolor{tec-red}{cmyk}{0, 0.86, 0.63, 0, 1.00}

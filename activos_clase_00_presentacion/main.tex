@@ -1,0 +1,156 @@
+\documentclass[10pt,t,aspectratio=169]{beamer}
+%\usetheme{Berkeley}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage[american]{circuitikz}
+
+\title{Elementos Activos}
+\subtitle{Presentación del curso}
+\author{Dr.-Ing. Juan José Montero Rodríguez}
+\subject{Elementos Activos}
+\institute{Escuela de Ingeniería Electrónica}
+\date{Semestre II-2023}
+\titlegraphic{\includegraphics[height=12mm]{figures/logoTEC.pdf}}
+
+
+
+\begin{document}
+
+
+\section{Presentación del curso}
+
+\begin{frame}[t]
+\titlepage
+\end{frame}
+
+\begin{frame}[t]
+\frametitle{Información General}%
+\begin{table}[H]
+	\flushleft
+	\begin{tabular}{ll}
+	\textbf{Curso} & Elementos Activos \\
+	\textbf{Código} & EL-2207 \\
+	\textbf{Tipo de curso} & Teórico \\
+	\textbf{Electivo} & No \\
+	\textbf{Créditos} & 4 \\
+	\textbf{Horas por semana} & 4 horas por semana \\
+	\textbf{Horas extraclase} & 8 horas por semana \\
+	\textbf{Áreas curriculares} & 100\% Ciencias de la Ingeniería \\
+	\textbf{Ubicación en plan de estudios} & IV Semestre \\
+	\textbf{Requisitos} & EL-2113 Circuitos Eléctricos en CC \\
+	\textbf{Correquisitos} & EL-2114 Circuitos Eléctricos en CA \\
+	\textbf{El curso es requisito de} & EL-3212 Circuitos Discretos \\
+	\textbf{Suficiencia} & Sí \\
+	\textbf{Metodología} & Clases magistrales \\
+	\textbf{Asistencia} & Virtual \\
+	\textbf{Vigencia del programa} & Semestre I-2024
+	\end{tabular}
+\end{table}
+\end{frame}
+
+\begin{frame}[t]
+\frametitle{Objetivos}
+\textbf{Descripción del curso}
+
+\begin{itemize}
+	\item Este curso cubre la teoría básica de los semiconductores y los dispositivos activos semiconductores más importantes, a saber, la unión PN, diodos, los transistores MOSFET y bipolares y sus aplicaciones analógicas y digitales.
+	\item El estudiante logrará un conocimiento de la teoría básica de dispositivos con semiconductores, sus curvas características, modelos matemáticos, análisis y diseño de circuitos en que son empleados, como base para los cursos de Circuitos Discretos y Diseño Lógico.
+\end{itemize}
+
+\vspace{3mm}
+\textbf{Objetivo general}
+
+\begin{itemize}
+	\item Explicar a nivel electrónico utilizando fundamentos de la física del semiconductor el funcionamiento los siguientes dispositivos semiconductores diodos, transistores MOSFET y bipolar, e interpretar correctamente el funcionamiento de un dispositivo (diodo, transistor, etc) a partir de sus curvas características.
+\end{itemize}
+
+
+\end{frame}
+
+
+\begin{frame}[t]
+\frametitle{Contenidos}
+
+\textbf{Semiconductores (2.5 semanas)}
+
+\begin{itemize}
+	\item Conceptos básicos: niveles de energía, cristal, bandas de conducción, valencia, nivel de Fermi, ecuación estadística de Fermi-Dirac.
+	\item Clasificación de los materiales de acuerdo con la conducción eléctrica: semiconductores, aislantes y conductores
+	\item Semiconductores intrínsecos y extrínsecos, dopado, el concepto de hueco, corriente de huecos, generación y recombinación
+	\item Transporte de portadores de carga: movilidad, conductividad, corriente de difusión, corriente de arrastre, relación de Einstein
+	\item Modelo de bandas de energía: nivel de Fermi, afinidad electrónica, función de trabajo, nivel de vacío, concentración de portadores de carga en función de la energía, deformación de bandas
+\end{itemize}
+
+\vspace{3mm}
+\textbf{Contactos metal-semiconductor/semiconductor-semiconductor (1 semana)}
+
+\begin{itemize}
+	\item Contactos metal-semiconductor: Schottky y Óhmico
+	\item La unión PN y electrostática de la juntura
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}[t]
+\frametitle{Contenidos}
+
+\textbf{El diodo (2.5 semanas)}
+	\begin{itemize}
+	\item Funcionamiento, curvas características, punto de operación. 
+	\item Modelo del diodo ideal, tensión constante, lineal incremental, Shockley.
+	\item Línea de carga y punto de operación, resistencia estática y dinámica.
+	\item Circuitos de aplicación: rectificadores, reguladores, limitadores. 
+	
+\end{itemize}
+
+\vspace{3mm}
+\textbf{El transistor bipolar BJT (4 semanas)}
+
+\begin{itemize}
+	\item Construcción, símbolo y funcionamiento.
+	\item Curvas características y polarización.
+	\item Modelos del BJT (gran señal, Ebers-Moll y pequeña señal).
+	\item Aplicaciones del BJT.
+\end{itemize}
+\end{frame}
+
+\begin{frame}[t]
+\frametitle{Contenidos}
+
+\textbf{El transistor de efecto de campo MOSFET (6 semanas)}
+
+\begin{itemize}
+	\item Construcción, símbolo, clasificación del MOSFET.
+	\item Funcionamiento, curvas características y polarización.
+	\item Efecto de cuerpo, modulación de largo de canal.
+	\item Modelo del MOSFET para aplicaciones analógicas.
+	\item Aplicaciones analógicas del MOSFET: fuente común, compuerta común, drenador común, ganancia e impedancias de entrada y salida.
+	\item Modelo del MOSFET para aplicaciones digitales.
+	\item Aplicaciones digitales del MOSFET: compuerta de transmisión, inversor NMOS, inversor CMOS, compuertas lógicas básicas. 
+\end{itemize}
+\end{frame}
+
+\begin{frame}[t]
+\frametitle{Evaluación y Bibliografía}
+\textbf{Evaluación} 
+
+\begin{itemize}
+	\item Examen parcial I: 30\%
+	\item Examen parcial II: 40\%
+	\item Examen parcial III: 20\%
+	\item Tareas: 10\%
+\end{itemize}
+
+\vspace{5mm}
+\textbf{Bibliografía obligatoria}
+
+\begin{itemize}
+	\item Pedro Julián. Dispositivos Semiconductores Principios y Modelos. Alfaomega, 2013.
+	\item Behzad Razavi. Fundamentals of Microelectronics. Wiley, 2a edición, 2013.
+	\item Robert F. Pierret. Semiconductor Device Fundamentals. Addison Wesley, 2a edición, 2002.
+	\item Jacob Baker. CMOS: Circuit Design, Layout, and Simulation (IEEE Press Series on Microelectronic Systems), Wiley, 4a edición, 2019, ISBN 978-1119481515.
+\end{itemize}
+\end{frame}
+
+
+\end{document}

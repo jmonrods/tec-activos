@@ -1,0 +1,455 @@
+\documentclass[t,aspectratio=169,10pt]{beamer}
+
+\usepackage[utf8]{inputenc}
+
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{textcomp} % to use \textmu
+\usepackage[absolute,overlay]{textpos} % to place floating text boxes with \begin{textblock*}{width}(x,y)
+\usepackage{tcolorbox}
+
+\usepackage{tikz}
+\usetikzlibrary{decorations.pathreplacing}
+
+\usepackage{graphicx}
+\graphicspath{{./figuras/}}
+
+\setbeamertemplate{navigation symbols}{}
+
+\title{Clase 14}
+\subtitle{Modelo de CD del transistor MOSFET}
+\author[Dr.-Ing. Juan José Montero-Rodríguez]{Dr.-Ing. Juan José Montero-Rodríguez}
+\subject{Elementos Activos}
+\institute{Escuela de Ingeniería Electrónica}
+\date{Semestre I-2024}
+\titlegraphic{\includegraphics[height=8mm]{logotec.pdf}}
+
+
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+
+\begin{frame}{Modelos del MOSFET}
+\centering
+\includegraphics[width=11cm]{modelosMOSFET}
+\end{frame}
+
+
+\begin{frame}{Modelo Analógico del MOSFET}
+Modelo analógico según región de operación
+
+\centering\vspace{3mm}
+\includegraphics[width=11cm]{analogico1}
+\end{frame}
+
+
+
+\section{Curvas}
+\begin{frame}{Curvas Características del MOSFET: Curva de Transferencia}
+
+La curva de transferencia se mide al dejar $V_{DS}$ constante y modificar $V_{GS}$.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{figuras/mosfet_transfer.png}
+\end{figure}
+
+
+
+\end{frame}
+
+
+
+\begin{frame}{Curvas Características del MOSFET: Curva de Salida}
+
+La curva de salida se mide al dejar $V_{GS}$ constante y modificar $V_{DS}$.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{figuras/mosfet_output.png}
+\end{figure}\textbf{}
+
+\end{frame}
+
+
+\section{Regiones}
+\begin{frame}{Región lineal}
+
+\begin{columns}
+
+	\begin{column}{0.5\textwidth}
+ 
+		\centering
+		\textbf{Región Lineal}
+		%
+		\[ V_{GS} > V_{TH}, V_{DS} < V_{GS} - V_{TH} \]
+		%
+		\includegraphics[width=5cm]{lineal}
+        
+        El canal está completo
+
+        \vspace{3mm}
+        Funcionamiento como resistencia controlada por tensión
+  
+	\end{column}
+ 
+	\begin{column}{0.5\textwidth}
+ 
+        \begin{figure}
+            \centering
+            \includegraphics[width=\textwidth]{figuras/region_lineal.png}
+        \end{figure}
+
+        \[ I_D = \mu C_{ox}' \dfrac{W}{L} \left( (V_{GS} - V_{TH}) V_{DS} - \dfrac{V_{DS}^2}{2} \right) \]
+  
+	\end{column}
+ 
+\end{columns}
+
+\end{frame}
+
+
+\begin{frame}{Región lineal: derivación de ecuaciones}
+
+\begin{columns}
+
+\begin{column}{0.5\textwidth}
+
+La carga eléctrica $[C/m]$:
+\[ Q = C \cdot V \]
+
+La corriente eléctrica $[A]$:
+\[ I = Q \cdot v \]
+%
+\[ I = (C V) \cdot (\mu E) \]
+
+Para el MOSFET se tiene:
+\[ C = W C_{ox}' \]
+
+Combinando ecuaciones:
+\[ I =  W C_{ox}' V \mu \dfrac{dV}{dx} \]
+
+\end{column}
+
+\begin{column}{0.5\textwidth}
+
+La tensión es función de la posición:
+\[ I = C \left( V_{GS} - V(x) - V_{TH} \right) \mu \dfrac{dV}{dx} \]
+%
+\[ I \cdot dx = C (V_{GS} - V(x) - V_{TH}) \mu dV \]
+%
+\[ \int_0^L I \cdot dx = \int_0^{V_{DS}} C (V_{GS} - V(x) - V_{TH}) \mu dV \]
+%
+\[ I \cdot L = \mu C_{ox}' W \left( (V_{GS} - V_{TH})V_{DS} - \dfrac{V_{DS}^2}{2} \right) \]
+%
+\[ \boxed{I = \mu C_{ox}' \dfrac{W}{L} \left( (V_{GS} - V_{TH})V_{DS} - \dfrac{V_{DS}^2}{2} \right)} \]
+%
+\centering Corriente de drenador en región lineal
+
+\end{column}
+    
+\end{columns}
+
+
+    
+\end{frame}
+
+
+
+\begin{frame}{Región lineal: resistencia de canal}
+MOSFET se comporta como resistencia R\textsubscript{ch} (resistencia de canal)
+%
+\[ R_{ch} = \left( \dfrac{\partial I_D}{\partial V_{DS}} \right)^{-1} \]
+%
+\[ \dfrac{\partial I_D }{\partial V_{DS}} = \mu C_{ox}' \dfrac{W}{L} (V_{GS} - V_{TH} - V_{DS})\]
+%
+Por lo tanto, la resistencia de canal se calcula como
+%
+\[ R_{ch} = \dfrac{1}{\mu C_{ox}' \dfrac{W}{L} (V_{GS} - V_{TH} - V_{DS})} \]
+%
+lo cual para $V_{DS} << (V_{GS} - V_{TH})$ puede aproximarse a
+%
+\[ \boxed{R_{ch} \approx \dfrac{1}{\mu C_{ox}' \dfrac{W}{L} (V_{GS} - V_{TH})}} \]
+\end{frame}
+
+
+
+\begin{frame}{Región de saturación}
+
+\begin{columns}
+
+	\begin{column}{0.5\textwidth}
+
+		\centering
+		\textbf{Región de Saturación}
+		%
+		\[ V_{GS} > V_{TH}, V_{DS} \geq V_{GS} - V_{TH} \]
+		%
+		\includegraphics[width=5cm]{satura}
+		
+		Estrangulamiento del canal
+		
+		\vspace{3mm}
+		Funcionamiento como fuente de corriente controlada por tensión
+ 
+	\end{column}
+ 
+	\begin{column}{0.5\textwidth}
+ 
+        \begin{figure}
+            \centering
+            \includegraphics[width=\textwidth]{figuras/region_saturacion.png}
+        \end{figure}
+
+        \[ I_D = \dfrac{1}{2} \mu {}C_{ox}' \dfrac{W}{L} (V_{GS}-V_{TH})^2 \]
+  
+	\end{column}
+ 
+\end{columns}
+
+\end{frame}
+
+
+\begin{frame}{Región de saturación: derivación de ecuaciones}
+
+La corriente de drenador en la región lineal:
+\[ I = \mu C_{ox}' \dfrac{W}{L} \left( (V_{GS} - V_{TH})V_{DS} - \dfrac{V_{DS}^2}{2} \right) \]
+
+El punto máximo de esta ecuación se encuentra igualando la primera derivada a cero:
+\[ \dfrac{d}{dV_{DS}} \left\{ \mu C_{ox}' \dfrac{W}{L} \left( (V_{GS} - V_{TH})V_{DS} - \dfrac{V_{DS}^2}{2} \right) \right\} = 0 \]
+%
+\[ \mu C_{ox}' \dfrac{W}{L} \left( (V_{GS} - V_{TH}) - V_{DS} \right) = 0 \]
+%
+\[ V_{GS} - V_{TH} - V_{DS} = 0 \]
+%
+\[ V_{GS} - V_{TH} = V_{DS} \]
+
+Por lo tanto, sustituyendo $V_{DS}$ en la ecuación para encontrar el máximo, se obtiene:
+\[ \boxed{I = \dfrac{1}{2} \mu C_{ox}' \dfrac{W}{L} (V_{GS} - V_{TH})^2} \]
+  
+\end{frame}
+
+
+\begin{frame}{Región de saturación: funcionamiento como fuente de corriente}
+MOSFET se comporta como fuente de corriente en paralelo con resistencia
+
+\centering
+\includegraphics[width=11cm]{analogico2}
+
+\includegraphics[width=11cm]{analogico3}
+\end{frame}
+
+
+
+\begin{frame}{Ecuaciones características del MOSFET}
+
+Corriente de drenador en la región lineal: $V_{GS} > V_{TH}$, $V_{DS} < V_{GS} - V_{TH}$
+
+\begin{tcolorbox}
+\[ I_D = \mu C_{ox}' \dfrac{W}{L} \left( (V_{GS} - V_{TH}) V_{DS} - \dfrac{V_{DS}^2}{2} \right) \]
+\end{tcolorbox}
+
+Corriente de drenador en la región de saturación: $V_{GS} > V_{TH}$, $ V_{DS} > V_{GS} - V_{TH} $
+
+\begin{tcolorbox}
+\[ I_D = \dfrac{1}{2} \mu {}C_{ox}' \dfrac{W}{L} (V_{GS}-V_{TH})^2 \]
+\end{tcolorbox}
+
+\begin{columns}
+	\begin{column}{0.25\textwidth}
+		\centering Transconductancia del proceso:
+		%
+		\[ K' = \mu\cdot{}C_{ox}'\ [A/V^2] \] 
+	\end{column}
+	\begin{column}{0.25\textwidth}
+		\centering Parámetro de transconductancia:
+		%
+		\[ K = \mu\cdot{}C_{ox}' \cdot \dfrac{W}{L} \]
+	\end{column}
+	\begin{column}{0.25\textwidth}
+        \centering Capacitancia de óxido:
+        %
+        \[ C_{ox}' = \dfrac{\epsilon_{ox}}{t_{ox}}\ [F/m^2] \]
+	\end{column}
+	\begin{column}{0.25\textwidth}		
+		$\mu$: movilidad
+		
+		$\epsilon_{ox}$: 3.9$\epsilon_0$
+		
+		$t_{ox}$: espesor de óxido
+	\end{column}
+
+\end{columns}
+\end{frame}
+
+
+\section{Ejemplos}
+\begin{frame}{Ejemplo 1: MOSFET en saturación}
+
+Determine el punto de operación de M1. Asuma $\mu_n C_{ox}' = 100\ \mu{}A/V^2$ y $V_{TH} = 0.4\ V$. Si la tensión de la compuerta aumenta 10 mV, ¿cuál es el cambio en la corriente de drenador?
+
+\begin{columns}
+
+\begin{column}{0.5\textwidth}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{figuras/mosfet_ejemplo_1.png}
+\end{figure}
+
+\end{column}
+
+\begin{column}{0.5\textwidth}
+
+\end{column}
+
+\end{columns}
+
+\end{frame}
+
+
+\begin{frame}{Solución 1: MOSFET en saturación}
+
+Determine el punto de operación de M1. Asuma $\mu_n C_{ox}' = 100\ \mu{}A/V^2$ y $V_{TH} = 0.4\ V$. Si la tensión de la compuerta aumenta 10 mV, ¿cuál es el cambio en la corriente de drenador?
+
+\begin{columns}
+
+\begin{column}{0.5\textwidth}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{figuras/mosfet_ejemplo_1.png}
+\end{figure}
+
+\end{column}
+
+\begin{column}{0.5\textwidth}
+
+\end{column}
+
+\end{columns}
+
+\end{frame}
+
+
+\begin{frame}{Ejemplo 2: MOSFET en saturación}
+
+Calcule la máxima tensión de compuerta permitida si se quiere que M1 permanezca en saturación. Asuma $\mu_n C_{ox}' = 100\ \mu{}A/V^2$ y $V_{TH} = 0.4\ V$.
+
+\begin{columns}
+
+\begin{column}{0.5\textwidth}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{figuras/mosfet_ejemplo_2.png}
+\end{figure}
+
+\end{column}
+
+\begin{column}{0.5\textwidth}
+
+\end{column}
+
+\end{columns}
+    
+\end{frame}
+
+
+\begin{frame}{Solución 2: MOSFET en saturación}
+
+Calcule la máxima tensión de compuerta permitida si se quiere que M1 permanezca en saturación. Asuma $\mu_n C_{ox}' = 100\ \mu{}A/V^2$ y $V_{TH} = 0.4\ V$.
+
+\begin{columns}
+
+\begin{column}{0.5\textwidth}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{figuras/mosfet_ejemplo_2.png}
+\end{figure}
+
+\end{column}
+
+\begin{column}{0.5\textwidth}
+
+\end{column}
+
+\end{columns}
+    
+\end{frame}
+
+
+
+\begin{frame}{Ejemplo 3: MOSFET en región lineal}
+
+Proponga una forma de conectar un transistor MOS de manera que la resistencia del canal sea exactamente de $1000\ \Omega$. Asuma $\mu_n C_{ox}' = 100\ \mu{}A/V^2$ y $V_{TH} = 0.4\ V$.
+    
+\end{frame}
+
+
+\section{Modelos de simulación}
+\begin{frame}{Modelos de Nivel 1, 2 y 3}
+
+Modelo de nivel 1:
+
+\begin{itemize}
+	\item Corriente de subumbral = 0
+	\item Reemplaza L por L\textsubscript{eff}
+\end{itemize}
+
+
+Modelo de nivel 2:
+
+\begin{itemize}
+    \item Saturación de la velocidad de arrastre
+    \item Ecuación de corriente de subumbral
+    \item Efectos de canal corto y canal angosto, en parte con parámetros de ajuste
+\end{itemize}
+
+
+Modelo de nivel 3:
+
+\begin{itemize}
+	\item Modelado de efectos de canal corto, válidos para L hasta de 2 \textmu{}m
+	\item Modelado empírico: menos ecuaciones y reducción de tiempo de simulación
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Modelo BSIM}
+
+\begin{itemize}
+	\item BSIM: Berkeley Short-Channel IGFET Model
+	\item Modelo más utilizado en simulación
+	\item Alrededor de 150 parámetros. Incluye
+	\begin{itemize}
+		\item Efectos de canal corto
+		\item Corriente de compuerta
+		\item Efectos de temperatura
+		\item Modulación de canal corto
+		\item Saturación de velocidad
+		\item Corriente de subumbral
+		\item Varios modelos de capacitancia
+		\item DIBL (drain induced barrier lowering)
+		\item Ruido, entre otros
+	\end{itemize}
+\end{itemize}
+
+\url{http://bsim.berkeley.edu/}
+
+\end{frame}
+
+
+\begin{frame}{Lecturas recomendadas}
+
+\begin{itemize}
+    \item Razavi, B. (2013). Fundamentals of microelectronics. Chapter 6: Physics of MOS transistors, 2nd ed., pp. 270-288, Wiley.
+\end{itemize}
+
+\end{frame}
+
+\end{document}

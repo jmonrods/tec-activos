@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="110.76093mm"
+   height="47.968246mm"
+   viewBox="0 0 110.76093 47.968246"
+   version="1.1"
+   id="svg9664"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   sodipodi:docname="diff-vs-imp.svg">
+  <defs
+     id="defs9658" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="-222.11659"
+     inkscape:cy="222.07723"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata9661">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-164.60168,-159.62302)">
+    <text
+       y="201.48218"
+       x="232.28732"
+       style="font-variant:normal;font-weight:normal;font-size:2.72877121px;font-family:Arial;-inkscape-font-specification:Arial;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.35277775"
+       id="text2674">
+      <tspan
+         style="stroke-width:0.35277775"
+         x="232.28732 234.10332 235.0079 236.52101 237.8813 239.39441 240.7547 242.26779 243.02449 244.53758 246.0507 246.80739 248.3205 248.9361 249.69252 251.20753 251.97458 253.48961 254.39609 255.91112 257.27332 257.87692 259.23914 259.84271 261.35773 262.87274"
+         y="201.48218"
+         sodipodi:role="line"
+         id="tspan2640">Proceso de alta precisión</tspan>
+      <tspan
+         style="stroke-width:0.35277775"
+         x="229.54845 230.45522 231.8177 233.33298 234.84827 236.21074 237.72603 239.24132 239.998 240.90477 242.42006 243.78253 244.38641 245.9017 247.41699 248.17368 249.53615 250.29285 251.80814 252.7149 254.23019 254.98688 256.50217 258.01746 259.53275 260.1366 261.65192 263.16718 264.6825"
+         y="205.42717"
+         sodipodi:role="line"
+         id="tspan2642">(concentración y profundidad)</tspan>
+      <tspan
+         style="stroke-width:0.35277775"
+         x="182.46432 184.73547 186.25076 187.76605 189.28133 190.6438 191.4005 192.91579 193.82256 195.33784 196.70032 197.3042 198.66667 199.27054 200.78584"
+         y="201.48218"
+         sodipodi:role="line"
+         id="tspan2644">Menos precisión</tspan>
+      <tspan
+         style="stroke-width:0.35277775"
+         x="174.35986 175.26663 176.62912 178.14439 179.65968 181.02216 182.53745 184.05273 184.80942 185.71619 187.23148 188.59396 189.19783 190.71312 192.22841 192.98509 194.34756 195.10426 196.61955 197.52632 199.0416 199.79829 201.31358 202.82886 204.34415 204.94803 206.46332 207.97861 209.49388"
+         y="205.42717"
+         sodipodi:role="line"
+         id="tspan2646">(concentración y profundidad)</tspan>
+      <tspan
+         style="stroke-width:0.35277775"
+         x="221.30074 223.26791 224.7821 226.2963 227.8105 229.32469 230.83888 232.20027 232.95695 234.31834 235.83253 237.34673 238.10342 239.4648 240.979 242.49319 243.85458 245.36877 246.88297 247.63829 248.54588 250.062 251.42528 252.02998 253.54608 255.06219 256.57831 257.94159 258.70346 260.97543 262.49155 264.00766 265.52374 266.43134 267.94745 269.31073 270.06824 270.83014 272.34622 273.86234"
+         y="192.53972"
+         sodipodi:role="line"
+         id="tspan2648">Dopados con concentraciones menores, 10</tspan>
+      <tspan
+         style="stroke-width:0.35277775"
+         x="232.65515 234.01955 235.53674 236.90112 238.40305 239.76743 240.52411 242.79718 244.31438 245.67877 247.19595 248.10464 248.86133 249.77002 251.2872 252.6516 253.25739 254.62177 255.38036 255.98616 257.35056 257.95633 259.47351 260.99072"
+         y="195.82025"
+         sodipodi:role="line"
+         id="tspan2650">veces mayor resistividad</tspan>
+      <tspan
+         style="stroke-width:0.35277775"
+         x="168.38086 170.19876 171.71378 172.62027 174.89116 175.49477 176.25117 177.76619 178.52806 180.04308 181.55809 183.0731 184.58812 186.10313 187.61815 188.98035 189.74222 191.25723 192.77225 193.53412 195.04913 195.65274 196.40915 197.92418 198.68605 200.04825 201.56326 203.07828 204.44048 205.95549 207.4705 208.22691 209.14679 210.65907 212.02127 212.62488 214.13989 215.65491 216.41132"
+         y="192.53972"
+         sodipodi:role="line"
+         id="tspan2652">Permite dopados de alta concentración,</tspan>
+      <tspan
+         style="stroke-width:0.35277775"
+         x="167.03175 169.30237 170.81711 171.57324 173.08798 173.99422 174.59753 176.11229 176.71561 178.23036 179.59229 180.35143 181.25764 182.7724 184.13432 185.64906 186.2524 187.00854 188.52328 190.03802 190.79416 192.3089 193.67084 194.42998 195.94472 197.45946 198.21861 199.73335 201.24809 201.85143 203.36617 204.12531 205.03152 206.54626 207.9082 208.51154 209.87346 210.62961 211.23294 212.59486 213.1982 214.71294 216.22768"
+         y="195.82025"
+         sodipodi:role="line"
+         id="tspan2654">materiales resultantes de baja resistividad</tspan>
+      <tspan
+         style="stroke-width:0.35277775"
+         x="221.45383 223.42154 224.93628 226.45102 227.81294 229.3277 230.08847 231.60321 233.11795 234.63269 236.14743 237.50937 238.27014 239.7849 240.38821 241.149 242.51094 243.11427 243.71759 244.32092 245.68286 246.28619 247.80093 248.55707 249.31786 250.23773 251.75247 253.26721 254.78195 255.38528 256.90002 257.80624 259.32098 260.08176 260.83792 261.74414 263.25888 264.01501 265.52975 267.80035 268.40369 269.91843 271.43317 272.18933 273.70407"
+         y="181.04205"
+         sodipodi:role="line"
+         id="tspan2656">Causa daños al silicio, requiere tratamiento</tspan>
+      <tspan
+         style="stroke-width:0.35277775"
+         x="222.16931 223.68513 225.20097 226.564 227.32123 228.83707 229.74438 230.3488 231.86462 232.7845 233.54446 235.06029 236.57613 237.33609 238.85191 239.45634 240.21358 241.72942 242.48938 243.24661 244.76245 247.03523 248.55052 250.06581 250.98567 252.50096 253.25766 254.77293 255.67972 257.19501 257.95169 259.46698 260.98227 261.88904 263.40433 264.16101 265.06778 266.58307 268.09836 269.61365 270.53351 272.0488 272.96866"
+         y="184.32257"
+         sodipodi:role="line"
+         id="tspan2658">posterior de alta temperatura para reparar</tspan>
+      <tspan
+         style="stroke-width:0.35277775"
+         x="241.75124 242.35349 243.86714 245.22797 245.98466 247.49831 249.01196 250.5256 252.03926"
+         y="187.6031"
+         sodipodi:role="line"
+         id="tspan2660">los daños</tspan>
+      <tspan
+         style="stroke-width:0.35277775"
+         x="169.12718 170.79227 172.30728 174.57817 176.09319 177.6082 178.52806 180.04308 180.7995 182.3145 183.22101 184.73602 185.49516 186.40166 187.91667 189.43169 190.9467 191.8532 193.36821 194.12735 195.64238 197.15739 197.9138 199.42882 200.79102 201.54744 203.06245 204.42465 205.18379 206.69881 208.21382 208.97296 210.33517 210.93877 211.54237 212.14598 213.50818 214.11179 215.6268"
+         y="181.04178"
+         sodipodi:role="line"
+         id="tspan2662">Temperatura repara defectos en silicio</tspan>
+      <tspan
+         style="stroke-width:0.35277775"
+         x="181.09502 182.61086 184.12668 185.034 186.54984 188.06567 188.82289 190.33873 191.1006 192.61644 193.22086 193.98273 195.49857 196.40588 197.92172 199.28473 200.80057 202.16359"
+         y="184.3223"
+         sodipodi:role="line"
+         id="tspan2664">durante el proceso</tspan>
+      <tspan
+         style="stroke-width:0.35277775"
+         x="231.43921 233.10403 234.61877 236.13353 237.64827 238.4044 239.91914 240.67911 242.19385 243.70859 244.46855 245.98329 247.49803 249.01277 250.52751 252.04225 252.7984 254.31314 255.67506 256.43121 257.19116 257.79449 259.30923 260.82397 262.33875 170.04704 171.71242 173.22771 174.74298 176.25827 177.01495 178.53024 179.28885 180.80414 182.31941 183.07802 184.59331 186.1086 187.62387 189.13916 190.65445 191.41115 192.92642 194.28889 195.04559 195.80418 197.16667 198.68195 199.28583 199.88971 201.405 202.92027 203.67697 204.43556 205.03944 205.79613 207.31142 208.82671 209.43059 210.94586 212.46115 213.21976 214.73505"
+         y="172.86555"
+         sodipodi:role="line"
+         id="tspan2666">Fuente de dopantes: ionesFuente de dopantes: sólido, líquido o</tspan>
+      <tspan
+         style="stroke-width:0.35277775"
+         x="187.24757 188.76259 190.2776 191.63982 193.15482 194.66985 196.03204"
+         y="176.14609"
+         sodipodi:role="line"
+         id="tspan2668">gaseoso</tspan>
+      <tspan
+         style="stroke-width:0.35277775"
+         x="233.79005 235.45515 236.97017 239.24104 240.75606 242.27107 243.19093 244.70596 245.46237 246.97739 247.88388 249.3989 250.15558 251.67059 253.94148 255.4565 256.06009 257.5751 259.09012 259.84656 175.18777 177.00623 177.91327 179.42883 180.79158 182.30714 183.66989 185.18546 185.9454 187.46097 188.97653 189.7365 191.25206 191.8562 192.61316 194.12872 194.88869 195.64565 197.16121 199.43263 200.9482 202.46376 203.3708 204.88637 205.64333 207.15887 208.06592"
+         y="167.75539"
+         sodipodi:role="line"
+         id="tspan2670">Temperatura ambienteProceso de alta temperatura</tspan>
+      <tspan
+         style="stroke-width:0.35277775"
+         x="239.85039 240.60735 242.87877 244.39433 244.99847 246.51404 248.0296 248.78656 250.30212 251.66487 252.26903 253.78458 187.48253 189.4467 190.04648 190.79907 192.31027 193.66866 194.26843 195.77963"
+         y="163.09491"
+         sodipodi:role="line"
+         id="tspan2672">ImplantaciónDifusión</tspan>
+    </text>
+    <path
+       d="M 164.79324,159.81458 H 275.17105"
+       style="fill:none;stroke:#000000;stroke-width:0.38311666;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       id="path2676"
+       inkscape:connector-curvature="0" />
+    <path
+       d="m 164.79324,164.47477 h 110.37781 m -110.37781,5.11034 h 110.37781 m -110.37781,8.17598 h 110.37781 m -110.37781,11.49773 h 110.37781 m -110.37781,8.94256 h 110.37781"
+       style="fill:none;stroke:#000000;stroke-width:0.17039166;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       id="path2678"
+       inkscape:connector-curvature="0" />
+    <path
+       d="M 164.79324,207.39971 H 275.17105 M 164.79324,159.81458 v 47.58513"
+       style="fill:none;stroke:#000000;stroke-width:0.38311666;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       id="path2680"
+       inkscape:connector-curvature="0" />
+    <path
+       d="m 219.98214,159.81458 v 47.58513"
+       style="fill:none;stroke:#000000;stroke-width:0.17039166;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       id="path2682"
+       inkscape:connector-curvature="0" />
+    <path
+       d="m 275.17105,159.81458 v 47.58513"
+       style="fill:none;stroke:#000000;stroke-width:0.38311666;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       id="path2684"
+       inkscape:connector-curvature="0" />
+  </g>
+</svg>

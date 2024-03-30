@@ -1,0 +1,272 @@
+% Package with commands used in course syllabae at Tec
+
+% ---------------------
+% Options
+% ---------------------
+%
+% draft    % Activa el modo draft (lo opuesto a la opción final)
+% final    % Activa el modo final (lo opuesto a la opción draft)
+%          % las opciones draft/final controlan qué hace \ifdraft{si draft}{si final}
+% 
+% kvoptions no se puede usar con acentos, porque los despedaza al extenderlos
+% 
+% Por eso usamos el método viejo de solo redefinir los siguientes comandos:
+%
+% \Depto          <Departamento en el TEC>
+% \sDepto         <Dpto en el TEC, versión corta>
+% \Plan           <Plan de estudios>
+% \sPlan          <Plan de est., versión corta>
+% \CodigoCurso    <Código del curso>
+% \NombreCurso    <Nombre largo del curso>
+% \sNombreCurso   <Nombre del curso, versión corta>
+% \Prof           <Nombre del profesor o profesora>
+% \Claves         <lista de claves para el pdf>
+
+% Package-Header
+\NeedsTeXFormat{LaTeX2e}[1995/06/01]
+\ProvidesPackage{sty/tecPrograma}[2017/02/02 v0.1 tecPrograma]
+
+% Other packages
+
+\RequirePackage[utf8]{inputenc} % input encoding
+
+\RequirePackage{ifthen}
+\RequirePackage[pdftex,table]{xcolor}
+\RequirePackage{ifpdf}
+
+% different languages
+\RequirePackage{calc}
+\RequirePackage{helvet}         % use helvetica font
+
+% Formato de la página particular de los programas
+\RequirePackage[
+                % showframe,
+                paper=letterpaper, 
+                left=60mm,
+                right=26mm,
+                top=40mm,
+                bottom=24mm,
+                footskip=20pt,
+                headheight=20mm,
+                headsep=10mm,
+                reversemp,
+                marginparwidth=33mm,
+                marginparsep=1mm
+                ]{geometry}
+
+\RequirePackage{lastpage}    % Referencia a la última página
+\RequirePackage{url}         % Allows linebreaks in URLs
+\RequirePackage{fancyhdr}
+\RequirePackage{tikz}
+\RequirePackage[explicit]{titlesec}
+\RequirePackage{enumitem}                   % replaces paralist
+\RequirePackage[pdfencoding=auto,
+                psdextra,
+                pdftex,%
+                linktocpage,
+                hyperindex,
+                colorlinks,
+                urlcolor=tecAzul,        %\href to external url
+                filecolor=tecAzul,       %\href to local file
+                linkcolor=tecAzul,       %\ref and \pageref
+                citecolor=white,         %\cite
+                % pagebackref,           % only in draft modus should this be on
+                plainpages=false,
+                pdfpagelabels,
+                pdfpagemode=UseOutlines, % use bookmarks (None,UseOutlines)
+                % bookmarksopen=false,   % open the whole hierarchy if true!
+                bookmarksnumbered=true,
+                pdfpagelayout=OneColumn, % SinglePage,OneColumn,TwoColumnLeft,...
+                pdfview=FitH, % FitB,FitBH,FitBV,Fit,FitH,FitV
+                pdfstartview=FitH, % FitB,FitBH,FitBV,Fit,FitH,FitV
+                ]{hyperref}
+
+\message{2017/02/02 v0.1 tecPrograma}
+
+\newcommand{\Depto}{Escuela de Ingeniería Electrónica}
+\newcommand{\sDepto}{Escuela de Ing.\ Electrónica}
+\newcommand{\Plan}{Licenciatura en Ingeniería Electrónica}
+\newcommand{\sPlan}{Lic.\ Ing.\ Electrónica}
+\newcommand{\CodigoCurso}{No indicado (use renewcommand CodigoCurso)}
+\newcommand{\NombreCurso}{No indicado (use renewcommand NombreCurso)}
+\newcommand{\sNombreCurso}{\NombreCurso}
+\newcommand{\Prof}{No indicado (use renewcommand Prof)}
+\newcommand{\PalabrasClaves}{No indicadas (use renewcommand Claves)}
+
+% --------------------------------------------------------------------------
+
+%\definecolor{azul}{cmyk}{1,0.57,0,0.40}      % según manual de imagen viejo
+%\definecolor{rojo}{cmyk}{0,0.9,0.86,0}       % según manual de imagen viejo
+
+\definecolor{tecAzul}{cmyk}{1,0.91,0.33,0.25} % según manual de imagen 2016
+\definecolor{tecRojo}{cmyk}{0,0.9,0.86,0}     % según manual de imagen 2016
+\definecolor{white}{rgb}{1.0,1.0,1.0}         % white
+
+% Set as default sans serif
+\renewcommand{\familydefault}{\sfdefault}
+
+\newlength{\margoffset}
+\setlength{\margoffset}{\dimexpr \marginparwidth+\marginparsep\relax}
+
+\renewcommand{\footrulewidth}{0.5pt}
+\renewcommand{\headrulewidth}{0.0mm}
+
+\let\oldfootrule\footrule
+\renewcommand{\footrule}{{\color{tecAzul}\oldfootrule}}
+
+
+% Command to change between draft or release mode:
+\newboolean{draftmode}                 % boolean used to control draft-mode
+\setboolean{draftmode}{false}
+
+\newcommand{\ifdraft}[2]{\ifthenelse{\boolean{draftmode}}{#1}{#2}}
+
+\setlength{\parindent}{0em}             % indentation width of first line
+\setlength{\parskip}{1.3ex}             % space between paragraphs
+
+%\renewcommand\thesection{\Roman{section}}
+\renewcommand\thesubsection{\arabic{subsection}}
+
+\newcounter{mgsection}
+\newcommand{\theMgSection}{\arabic{mgsection}}
+\setcounter{mgsection}{1}
+
+\newcommand{\msubsection}[1]{\stepcounter{mgsection}%
+  \bigskip
+  \leavevmode%
+  \marginpar{\@afterindentfalse\@afterheading\textcolor{tecAzul}%
+  {\bf\large\theMgSection.~\parbox[t][][t]{\marginparwidth}{#1}}}%
+  \phantomsection
+  \addcontentsline{toc}{subsection}{\theMgSection.~#1}%
+  \hspace{-0.55ex}}%
+
+\titleformat{\section}%
+{\color{tecAzul}\normalfont\Large\bfseries}% format
+{}%                      % label
+{0pt}%                                  % sep
+  {\hspace{-\margoffset}%
+    \makebox[\dimexpr\linewidth][l]{%
+      \parbox{\dimexpr\textwidth+\marginparwidth+\marginparsep\relax}%
+      {\raggedright\Roman{section}~parte:~\textcolor{tecAzul}{#1}}}}%
+  {}
+
+\titleformat{\subsection}%
+  {\color{tecAzul}\normalfont\large\bfseries}% format
+  {}%                               % label
+  {0pt}%                            % sep
+  {\hspace{-\margoffset}%
+    \makebox[\dimexpr\linewidth][l]{%
+      \parbox{\dimexpr\textwidth+\marginparwidth+\marginparsep\relax}%
+      {\raggedright\arabic{subsection}~\textcolor{tecAzul}{#1}}}}%
+  {}
+
+\usetikzlibrary{positioning}
+
+% include all packages and define all required general macros
+
+\renewenvironment{thebibliography}[1]
+     {%\section{\refname}%
+      \@mkboth{\MakeUppercase\refname}{\MakeUppercase\refname}%
+      \list{\@biblabel{\@arabic\c@enumiv}}%
+           {\settowidth\labelwidth{\@biblabel{#1}}%
+            \leftmargin\labelwidth
+            \advance\leftmargin\labelsep
+            \@openbib@code
+            \usecounter{enumiv}%
+            \let\p@enumiv\@empty
+            \renewcommand\theenumiv{\@arabic\c@enumiv}}%
+      \sloppy
+      \clubpenalty4000
+      \@clubpenalty \clubpenalty
+      \widowpenalty4000%
+      \sfcode`\.\@m}
+     {\def\@noitemerr
+       {\@latex@warning{Empty `thebibliography' environment}}%
+      \endlist}
+
+\newcommand{\paginaTitulo}{%
+  \savegeometry{contentsgeom}
+  \newgeometry{margin=20mm,left=0mm,bottom=30mm}
+  %
+  \thispagestyle{empty}
+  %
+  \raisebox{80mm}{%
+    \mbox{%
+      \begin{tikzpicture}
+	\fill[fill=tecAzul] (0,0) rectangle (10.7,1.6);
+        \node[inner sep=0pt] (tec) at(16.0,0.80)
+              {\includegraphics[height=16.5mm]{Firma_TEC-4}};
+      \end{tikzpicture}}}
+  
+  \vfill
+
+  \hspace{26mm}
+  \begin{minipage}{\linewidth+\margoffset}
+    {\Large Programa del curso \CodigoCurso}
+
+    \vspace*{5mm}
+    {\LARGE \color{tecAzul}\bf\NombreCurso}
+  \end{minipage}
+
+  \vspace*{5mm}
+  \hspace{36mm}
+  \begin{minipage}{4.85in}
+    \large
+    \Depto \\
+    \Plan
+
+    \vspace*{5mm}
+    \small
+    [Última revisión del programa: \today]
+  \end{minipage}
+  \normalsize
+  \loadgeometry{contentsgeom}
+  \newpage
+}
+
+\newlist{compactitem}{itemize}{3}
+\setlist[compactitem]{topsep=0pt,partopsep=0pt,itemsep=-1ex,parsep=0pt}
+\setlist[compactitem,1]{label=\textbullet}
+\setlist[compactitem,2]{label=---}
+\setlist[compactitem,3]{label=*}
+\setlist[compactitem]{nolistsep}
+\setlist[compactitem]{leftmargin=*}
+
+\newlist{compactenum}{enumerate}{3}
+\setlist[compactenum]{topsep=0pt,partopsep=0pt,itemsep=-1ex,parsep=0pt}
+\setlist[compactenum,1]{label=\arabic*.}
+\setlist[compactenum,2]{label=\arabic{compactenumi}.\arabic*.}
+\setlist[compactenum,3]{label=\arabic{compactenumi}.\arabic{compactenumii}.\arabic*}
+\setlist[compactenum]{nolistsep}
+\setlist[compactenum]{leftmargin=*}
+
+\fancyheadoffset[L]{\margoffset}
+\fancyfootoffset[L]{\margoffset}
+
+\fancyhf{}
+\fancyhead[L]{\includegraphics[height=11.5mm]{Firma_TEC-4}}
+
+
+% --------------------------------------------------------------------------
+
+
+% Allow the use of international characters
+\AtBeginDocument{%
+  \hypersetup{%
+             pdftitle={\CodigoCurso~\NombreCurso},%
+             pdfsubject={Programa del curso},%
+             pdfauthor={\Prof},%
+             pdfkeywords={\PalabrasClaves}
+            }%
+
+\fancyfoot[L]{\small\textcolor{tecAzul}{\sDepto\ }%
+       {\color{tecRojo}\rule[-1mm]{0.3mm}{1.1em}}%
+       	\textcolor{tecAzul}{\ \CodigoCurso\ \sNombreCurso}}
+\fancyfoot[R]{\small\textcolor{tecAzul}{Página\ }%
+       {\color{tecAzul}\rule[-1mm]{0.3mm}{1.1em}}%
+       {\color{tecAzul}{\ \thepage\ de \pageref{LastPage}}}}
+
+}
+
+\endinput
+

@@ -1,0 +1,204 @@
+\chapter{El diodo}
+
+\section{Introducción}
+
+\subsection{Construcción, símbolo y funcionamiento}
+
+
+
+
+\section{Modelo analógico}
+
+\subsection{Modelo de CD}
+
+% ToDo: Colocar aquí una intro a los cuatro modelos, e insertar una imagen con las curvas características de cada uno.
+
+\subsubsection{Modelo ideal}
+
+Un diodo ideal conduce si se aplica una tensión $V_D$ positiva, mayor que cero, en polarización directa. Cuando el diodo conduce, se modela como un interruptor cerrado. Si por el contrario se aplica una tensión negativa $V_D$ entre las terminales del diodo, éste se modela como un interruptor abierto.
+
+% ToDo: ejemplo ideal
+
+\subsubsection{Modelo de tensión constante}
+
+En el modelo de tensión constante, se asume que el diodo está encendido si tiene una tensión de al menos $V_{bi}$ entre sus terminales. A partir de esta tensión, el diodo conduce.
+
+% ToDo: ejemplo vconstante
+
+\subsubsection{Modelo lineal incremental}
+
+En este modelo, la corriente que fluye a través del diodo se aproxima por medio de una ecuación lineal:
+
+\[ I_D = g_m (V_D - V_{TH}) \]
+
+Donde $V_{TH}$ es la tensión de umbral necesaria para encender el diodo. Esta tensión es típicamente 0.7 V para diodos de silicio, y 0.4 V para diodos de germanio.
+
+La transconductancia $g_m$ se define como la pendiente de la curva I-V. 
+
+% ToDo: Ejemplo MLI con método iterativo
+
+\subsubsection{Modelo exponencial}
+
+La corriente que fluye a través de un diodo es función de la tensión aplicada:
+
+\[ I_D = I_S \cdot (e^{V_D/V_t} - 1) \]
+
+Donde $I_S$ es la corriente de fuga de reversa, que depende de los parámetros físicos de construcción del dispositivo y se determina con la siguiente ecuación:
+
+\[ I_S = q A n_i^2 \left( \dfrac{D_n}{N_A L_n} + \dfrac{D_p}{N_D L_p} \right) \]
+
+Alternativamente, se puede despejar la tensión del diodo en función de la corriente que fluye a través de la juntura:
+
+\[ V_D = V_t \ln \left( \dfrac{I_C}{I_S} \right) \]
+
+% ToDo: Ejemplo Exp con método iterativo
+
+
+\subsection{Resistencia estática}
+
+La resistencia estática se calcula como
+
+\[ R_D = \dfrac{V_D}{I_D} \]
+
+\subsection{Modelo de CA}
+
+Punto de operación, transconductancia
+
+
+\subsection{Resistencia dinámica}
+
+La resistencia dinámica se calcula como
+
+\[ r_d = \dfrac{V_t}{i_d} \]
+
+
+
+
+\section{Aplicaciones del diodo}
+
+\subsection{Rectificador de media onda}
+
+\begin{figure}[H]
+    \centering
+    \begin{tikzpicture}
+        \draw
+        (0,2) to[vsourcesin,l=$v_s$] (0,0){}
+        (0,2) to[D] (2.5,2){}
+        (2,2) to[R,l=$R_L$] (2,0){}
+        (0,0) node[ground]{}
+        (2,0) node[ground]{}
+        (2,2) to[short,-o] (3,2){}
+        (3,2) node[anchor=west]{$V_{out}$}
+        ;
+    \end{tikzpicture}
+    \caption{Circuito rectificador de media onda.}   
+    \label{rectifier_halfwave} 
+\end{figure}
+
+\subsubsection{Condensador de filtrado}
+
+\begin{figure}[H]
+    \centering
+    \begin{tikzpicture}
+        \draw
+        (0,2) to[vsourcesin,l=$v_s$] (0,0){}
+        (0,2) to[D] (2,2){}
+        (2,2) to[C,l=$C_F$] (2,0){}
+        (0,0) node[ground]{}
+        (2,0) node[ground]{}
+        (2,2) to[short,-o] (5,2){}
+        (5,2) node[anchor=west]{$V_{out}$}
+        (4,2) to[R,l=$R_L$] (4,0){}
+        (4,0) node[ground]{}
+        ;
+    \end{tikzpicture}
+    \caption{Circuito rectificador de media onda.}   
+    \label{rectifier_halfwave_CF} 
+\end{figure}
+
+\subsection{Rectificador de onda completa}
+
+\subsubsection{Condensador de filtrado}
+
+\[ V_r = \dfrac{I_L T}{C_F} \]
+
+\subsection{Rectificador con puente de diodos}
+
+\subsubsection{Condensador de filtrado}
+
+\[ V_r = \dfrac{I_L T}{2 C_F} \]
+
+
+\subsection{Limitadores de tensión}
+
+\subsubsection{Limitador serie}
+
+\subsubsection{Limitador paralelo}
+
+\begin{figure}[H]
+    \centering
+    \begin{tikzpicture}
+        \draw
+        (0,2) to[vsourcesin,l=$v_s$] (0,0){}
+        (0,2) to[R,l=,l=$R_S$] (2,2){}
+        (2,2) to[D] (2,0){}
+        (0,0) node[ground]{}
+        (2,0) node[ground]{}
+        (2,2) to[short,-o] (3,2){}
+        (3,2) node[anchor=west]{$V_{out}$}
+        ;
+    \end{tikzpicture}
+    \caption{Circuito limitador paralelo.}   
+    \label{limiter_parallel} 
+\end{figure}
+
+
+\begin{figure}[H]
+    \centering
+    \begin{tikzpicture}
+        \draw
+        (0,2) to[vsourcesin,l=$v_s$] (0,-1){}
+        (0,2) to[R,l=,l=$R_S$] (2,2){}
+        (2,2) to[D] (2,0){}
+        (2,0) to[battery2,l=$V_1$] (2,-1){}
+        (0,-1) node[ground]{}
+        (2,-1) node[ground]{}
+        (2,2) to[short,-o] (3,2){}
+        (3,2) node[anchor=west]{$V_{out}$}
+        ;
+    \end{tikzpicture}
+    \caption{Circuito limitador paralelo con fuente.}   
+    \label{limiter_parallel_V} 
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \begin{tikzpicture}
+        \draw
+        (0,2) to[vsourcesin,l=$v_s$] (0,-1){}
+        (0,2) to[R,l=,l=$R_S$] (2,2){}
+        (2,2) to[D] (2,0){}
+        (2,0) to[battery2,l=$V_1$] (2,-1){}
+        (0,-1) node[ground]{}
+        (4,0) to[D] (4,2){}
+        (4,-1) to[battery2,l_=$V_2$] (4,0){}
+        (4,-1) node[ground]{}
+        (2,-1) node[ground]{}
+        (2,2) to[short,-o] (5,2){}
+        (5,2) node[anchor=west]{$V_{out}$}
+        ;
+    \end{tikzpicture}
+    \caption{Circuito limitador paralelo con dos fuentes.}   
+    \label{limiter_parallel_2V}
+\end{figure}
+
+
+\subsection{Cambiadores de nivel}
+
+\subsection{Duplicadores de tensión}
+
+\subsection{Compuertas lógicas}
+
+\subsection{Diodo LED}
+
+\subsection{Diodo Zener}

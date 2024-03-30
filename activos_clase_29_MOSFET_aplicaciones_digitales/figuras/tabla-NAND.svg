@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="97.924408mm"
+   height="25.023939mm"
+   viewBox="0 0 97.924408 25.023939"
+   version="1.1"
+   id="svg4605"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   sodipodi:docname="tabla-NAND.svg">
+  <defs
+     id="defs4599" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="667.91114"
+     inkscape:cy="-272.71067"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata4602">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(70.884821,-51.654698)">
+    <text
+       y="55.137249"
+       x="3.8527348"
+       style="font-variant:normal;font-weight:normal;font-size:2.72877121px;font-family:Arial;-inkscape-font-specification:Arial;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.35277775"
+       id="text3945">
+      <tspan
+         style="stroke-width:0.35277775"
+         x="3.8527348 5.6681871 7.1807451 7.7818956 8.5358553 10.048406 10.649556 12.928082 14.44064 15.953198 16.70989 18.069632 19.582197 20.183348 20.784483 22.297049 -17.711649 -15.896747 -14.384734 -13.784133 -13.183528 -11.671515 -9.4030905 -8.8005781 -7.2885618 -5.7765532 -5.175952 -3.8167522 -46.522293 -44.705204 -43.19101 -42.588223 -41.832623 -40.318432 -39.715645 -37.437126 -35.922928 -34.40873 -33.652042 -32.137848 -30.623652 -29.868055 -28.962378 -27.448179 -25.933985 -69.098511 -67.281418 -65.767227 -65.011627 -64.105949 -62.591751 -61.077557 -58.799038 -58.196247 -56.682053 -55.167858 -54.565075 -53.20369"
+         y="55.137249"
+         sodipodi:role="line"
+         id="tspan3941">Voltajede salidaSalidalógicaVoltajede entradaEntradalógica</tspan>
+      <tspan
+         style="stroke-width:0.35277775"
+         x="13.081441 -10.762019 -45.438972"
+         y="74.954132"
+         sodipodi:role="line"
+         id="tspan3943">00V</tspan>
+    </text>
+    <text
+       y="75.638931"
+       x="-43.620007"
+       style="font-variant:normal;font-weight:normal;font-size:1.8702867px;font-family:Arial;-inkscape-font-specification:Arial;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.35277775"
+       id="text3949">
+      <tspan
+         style="stroke-width:0.35277775"
+         x="-43.620007"
+         y="75.638931"
+         id="tspan3947">A</tspan>
+    </text>
+    <text
+       y="74.954185"
+       x="-42.373108"
+       style="font-variant:normal;font-weight:normal;font-size:2.72877121px;font-family:Arial;-inkscape-font-specification:Arial;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.35277775"
+       id="text3953">
+      <tspan
+         style="stroke-width:0.35277775"
+         x="-42.373108 -40.77869"
+         y="74.954185"
+         sodipodi:role="line"
+         id="tspan3951">=V</tspan>
+    </text>
+    <text
+       y="75.638931"
+       x="-38.959599"
+       style="font-variant:normal;font-weight:normal;font-size:1.8702867px;font-family:Arial;-inkscape-font-specification:Arial;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.35277775"
+       id="text3957">
+      <tspan
+         style="stroke-width:0.35277775"
+         x="-38.959599 -37.600651"
+         y="75.638931"
+         sodipodi:role="line"
+         id="tspan3955">DD</tspan>
+    </text>
+    <text
+       y="74.954185"
+       x="-36.241024"
+       style="font-variant:normal;font-weight:normal;font-size:2.72877121px;font-family:Arial;-inkscape-font-specification:Arial;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.35277775"
+       id="text3961">
+      <tspan
+         style="stroke-width:0.35277775"
+         x="-36.241024 -35.473969 -34.717278"
+         y="74.954185"
+         sodipodi:role="line"
+         id="tspan3959">, V</tspan>
+    </text>
+    <text
+       y="75.638931"
+       x="-32.899021"
+       style="font-variant:normal;font-weight:normal;font-size:1.8702867px;font-family:Arial;-inkscape-font-specification:Arial;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.35277775"
+       id="text3965">
+      <tspan
+         style="stroke-width:0.35277775"
+         x="-32.899021"
+         y="75.638931"
+         id="tspan3963">B</tspan>
+    </text>
+    <text
+       y="74.954185"
+       x="-31.652159"
+       style="font-variant:normal;font-weight:normal;font-size:2.72877121px;font-family:Arial;-inkscape-font-specification:Arial;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.35277775"
+       id="text3969">
+      <tspan
+         style="stroke-width:0.35277775"
+         x="-31.652159 -30.057737"
+         y="74.954185"
+         sodipodi:role="line"
+         id="tspan3967">=V</tspan>
+    </text>
+    <text
+       y="75.638931"
+       x="-28.228415"
+       style="font-variant:normal;font-weight:normal;font-size:1.8702867px;font-family:Arial;-inkscape-font-specification:Arial;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.35277775"
+       id="text3973">
+      <tspan
+         style="stroke-width:0.35277775"
+         x="-28.228415 -26.869463"
+         y="75.638931"
+         sodipodi:role="line"
+         id="tspan3971">DD</tspan>
+    </text>
+    <text
+       y="74.954185"
+       x="-66.083939"
+       style="font-variant:normal;font-weight:normal;font-size:2.72877121px;font-family:Arial;-inkscape-font-specification:Arial;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.35277775"
+       id="text3979">
+      <tspan
+         style="stroke-width:0.35277775"
+         x="-66.083939 -64.26358 -62.669701 -61.152233 -60.39336 -59.636673 -57.816307 -56.222435"
+         y="74.954185"
+         sodipodi:role="line"
+         id="tspan3975">A=1, B=1</tspan>
+      <tspan
+         style="stroke-width:0.35277775"
+         x="11.568433"
+         y="70.160828"
+         id="tspan3977">V</tspan>
+    </text>
+    <text
+       y="70.845665"
+       x="13.388173"
+       style="font-variant:normal;font-weight:normal;font-size:1.8702867px;font-family:Arial;-inkscape-font-specification:Arial;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.35277775"
+       id="text3983">
+      <tspan
+         style="stroke-width:0.35277775"
+         x="13.388173 14.747128"
+         y="70.845665"
+         sodipodi:role="line"
+         id="tspan3981">DD</tspan>
+    </text>
+    <text
+       y="70.160927"
+       x="-10.762107"
+       style="font-variant:normal;font-weight:normal;font-size:2.72877121px;font-family:Arial;-inkscape-font-specification:Arial;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.35277775"
+       id="text3987">
+      <tspan
+         style="stroke-width:0.35277775"
+         x="-10.762107 -43.926502"
+         y="70.160927"
+         sodipodi:role="line"
+         id="tspan3985">1V</tspan>
+    </text>
+    <text
+       y="70.845665"
+       x="-42.107399"
+       style="font-variant:normal;font-weight:normal;font-size:1.8702867px;font-family:Arial;-inkscape-font-specification:Arial;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.35277775"
+       id="text3991">
+      <tspan
+         style="stroke-width:0.35277775"
+         x="-42.107399"
+         y="70.845665"
+         id="tspan3989">A</tspan>
+    </text>
+    <text
+       y="70.160927"
+       x="-40.860538"
+       style="font-variant:normal;font-weight:normal;font-size:2.72877121px;font-family:Arial;-inkscape-font-specification:Arial;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.35277775"
+       id="text3995">
+      <tspan
+         style="stroke-width:0.35277775"
+         x="-40.860538 -39.266117"
+         y="70.160927"
+         sodipodi:role="line"
+         id="tspan3993">=V</tspan>
+    </text>
+    <text
+       y="70.845665"
+       x="-37.446995"
+       style="font-variant:normal;font-weight:normal;font-size:1.8702867px;font-family:Arial;-inkscape-font-specification:Arial;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.35277775"
+       id="text3999">
+      <tspan
+         style="stroke-width:0.35277775"
+         x="-37.446995 -36.088043"
+         y="70.845665"
+         sodipodi:role="line"
+         id="tspan3997">DD</tspan>
+    </text>
+    <text
+       y="70.160927"
+       x="-34.728416"
+       style="font-variant:normal;font-weight:normal;font-size:2.72877121px;font-family:Arial;-inkscape-font-specification:Arial;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.35277775"
+       id="text4003">
+      <tspan
+         style="stroke-width:0.35277775"
+         x="-34.728416 -33.961357 -33.20467"
+         y="70.160927"
+         sodipodi:role="line"
+         id="tspan4001">, V</tspan>
+    </text>
+    <text
+       y="70.845665"
+       x="-31.38645"
+       style="font-variant:normal;font-weight:normal;font-size:1.8702867px;font-family:Arial;-inkscape-font-specification:Arial;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.35277775"
+       id="text4007">
+      <tspan
+         style="stroke-width:0.35277775"
+         x="-31.38645"
+         y="70.845665"
+         id="tspan4005">B</tspan>
+    </text>
+    <text
+       y="70.160927"
+       x="-30.139551"
+       style="font-variant:normal;font-weight:normal;font-size:2.72877121px;font-family:Arial;-inkscape-font-specification:Arial;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.35277775"
+       id="text4013">
+      <tspan
+         style="stroke-width:0.35277775"
+         x="-30.139551 -28.545134 -66.083748 -64.263382 -62.66951 -61.152039 -60.393166 -59.636478 -57.816116 -56.222244"
+         y="70.160927"
+         sodipodi:role="line"
+         id="tspan4009">=0A=1, B=0</tspan>
+      <tspan
+         style="stroke-width:0.35277775"
+         x="11.568624"
+         y="65.377937"
+         id="tspan4011">V</tspan>
+    </text>
+    <text
+       y="66.062637"
+       x="13.388173"
+       style="font-variant:normal;font-weight:normal;font-size:1.8702867px;font-family:Arial;-inkscape-font-specification:Arial;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.35277775"
+       id="text4017">
+      <tspan
+         style="stroke-width:0.35277775"
+         x="13.388173 14.747128"
+         y="66.062637"
+         sodipodi:role="line"
+         id="tspan4015">DD</tspan>
+    </text>
+    <text
+       y="65.377892"
+       x="-10.762107"
+       style="font-variant:normal;font-weight:normal;font-size:2.72877121px;font-family:Arial;-inkscape-font-specification:Arial;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.35277775"
+       id="text4021">
+      <tspan
+         style="stroke-width:0.35277775"
+         x="-10.762107 -43.926502"
+         y="65.377892"
+         sodipodi:role="line"
+         id="tspan4019">1V</tspan>
+    </text>
+    <text
+       y="66.062637"
+       x="-42.107399"
+       style="font-variant:normal;font-weight:normal;font-size:1.8702867px;font-family:Arial;-inkscape-font-specification:Arial;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.35277775"
+       id="text4025">
+      <tspan
+         style="stroke-width:0.35277775"
+         x="-42.107399"
+         y="66.062637"
+         id="tspan4023">A</tspan>
+    </text>
+    <text
+       y="65.377892"
+       x="-40.860538"
+       style="font-variant:normal;font-weight:normal;font-size:2.72877121px;font-family:Arial;-inkscape-font-specification:Arial;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.35277775"
+       id="text4029">
+      <tspan
+         style="stroke-width:0.35277775"
+         x="-40.860538 -39.263664 -37.743195 -36.981319 -36.224632"
+         y="65.377892"
+         sodipodi:role="line"
+         id="tspan4027">=0, V</tspan>
+    </text>
+    <text
+       y="66.062637"
+       x="-34.411591"
+       style="font-variant:normal;font-weight:normal;font-size:1.8702867px;font-family:Arial;-inkscape-font-specification:Arial;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.35277775"
+       id="text4033">
+      <tspan
+         style="stroke-width:0.35277775"
+         x="-34.411591"
+         y="66.062637"
+         id="tspan4031">B</tspan>
+    </text>
+    <text
+       y="65.377892"
+       x="-33.164764"
+       style="font-variant:normal;font-weight:normal;font-size:2.72877121px;font-family:Arial;-inkscape-font-specification:Arial;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.35277775"
+       id="text4037">
+      <tspan
+         style="stroke-width:0.35277775"
+         x="-33.164764 -31.570345"
+         y="65.377892"
+         sodipodi:role="line"
+         id="tspan4035">=V</tspan>
+    </text>
+    <text
+       y="66.062637"
+       x="-29.740988"
+       style="font-variant:normal;font-weight:normal;font-size:1.8702867px;font-family:Arial;-inkscape-font-specification:Arial;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.35277775"
+       id="text4041">
+      <tspan
+         style="stroke-width:0.35277775"
+         x="-29.740988 -28.382032"
+         y="66.062637"
+         sodipodi:role="line"
+         id="tspan4039">DD</tspan>
+    </text>
+    <text
+       y="65.377892"
+       x="-66.083939"
+       style="font-variant:normal;font-weight:normal;font-size:2.72877121px;font-family:Arial;-inkscape-font-specification:Arial;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.35277775"
+       id="text4047">
+      <tspan
+         style="stroke-width:0.35277775"
+         x="-66.083939 -64.26358 -62.669701 -61.152233 -60.39336 -59.636673 -57.816307 -56.222435"
+         y="65.377892"
+         sodipodi:role="line"
+         id="tspan4043">A=0, B=1</tspan>
+      <tspan
+         style="stroke-width:0.35277775"
+         x="11.568433"
+         y="60.564339"
+         id="tspan4045">V</tspan>
+    </text>
+    <text
+       y="61.248913"
+       x="13.388173"
+       style="font-variant:normal;font-weight:normal;font-size:1.8702867px;font-family:Arial;-inkscape-font-specification:Arial;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.35277775"
+       id="text4051">
+      <tspan
+         style="stroke-width:0.35277775"
+         x="13.388173 14.747128"
+         y="61.248913"
+         sodipodi:role="line"
+         id="tspan4049">DD</tspan>
+    </text>
+    <text
+       y="60.564171"
+       x="-10.762107"
+       style="font-variant:normal;font-weight:normal;font-size:2.72877121px;font-family:Arial;-inkscape-font-specification:Arial;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.35277775"
+       id="text4055">
+      <tspan
+         style="stroke-width:0.35277775"
+         x="-10.762107 -42.413944"
+         y="60.564171"
+         sodipodi:role="line"
+         id="tspan4053">1V</tspan>
+    </text>
+    <text
+       y="61.248913"
+       x="-40.594791"
+       style="font-variant:normal;font-weight:normal;font-size:1.8702867px;font-family:Arial;-inkscape-font-specification:Arial;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.35277775"
+       id="text4059">
+      <tspan
+         style="stroke-width:0.35277775"
+         x="-40.594791"
+         y="61.248913"
+         id="tspan4057">A</tspan>
+    </text>
+    <text
+       y="60.564171"
+       x="-39.347939"
+       style="font-variant:normal;font-weight:normal;font-size:2.72877121px;font-family:Arial;-inkscape-font-specification:Arial;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.35277775"
+       id="text4063">
+      <tspan
+         style="stroke-width:0.35277775"
+         x="-39.347939 -37.75106 -36.230587 -35.468716 -34.712029"
+         y="60.564171"
+         sodipodi:role="line"
+         id="tspan4061">=0, V</tspan>
+    </text>
+    <text
+       y="61.248913"
+       x="-32.899021"
+       style="font-variant:normal;font-weight:normal;font-size:1.8702867px;font-family:Arial;-inkscape-font-specification:Arial;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.35277775"
+       id="text4067">
+      <tspan
+         style="stroke-width:0.35277775"
+         x="-32.899021"
+         y="61.248913"
+         id="tspan4065">B</tspan>
+    </text>
+    <text
+       y="60.564171"
+       x="-31.652159"
+       style="font-variant:normal;font-weight:normal;font-size:2.72877121px;font-family:Arial;-inkscape-font-specification:Arial;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.35277775"
+       id="text4071">
+      <tspan
+         style="stroke-width:0.35277775"
+         x="-31.652159 -30.057737 -66.083794 -64.263435 -62.669556 -61.152088 -60.393215 -59.636524 -57.816162 -56.222286"
+         y="60.564171"
+         sodipodi:role="line"
+         id="tspan4069">=0A=0, B=0</tspan>
+    </text>
+    <path
+       d="M -70.693263,51.846256 H 26.848025"
+       style="fill:none;stroke:#000000;stroke-width:0.38311666;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       id="path4073"
+       inkscape:connector-curvature="0" />
+    <path
+       d="m -70.693263,62.087042 h 97.541288 m -97.541288,4.793192 h 97.541288 m -97.541288,4.793191 h 97.541288"
+       style="fill:none;stroke:#000000;stroke-width:0.17039166;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       id="path4075"
+       inkscape:connector-curvature="0" />
+    <path
+       d="M -70.693263,76.487078 H 26.848025 M -70.693263,51.846256 v 24.640822"
+       style="fill:none;stroke:#000000;stroke-width:0.38311666;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       id="path4077"
+       inkscape:connector-curvature="0" />
+    <path
+       d="M -50.109739,51.846256 V 76.487078 M -20.82883,51.846256 V 76.487078 M 0.82749029,51.846256 v 24.640822"
+       style="fill:none;stroke:#000000;stroke-width:0.17039166;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       id="path4079"
+       inkscape:connector-curvature="0" />
+    <path
+       d="M 26.848025,51.846256 V 76.487078"
+       style="fill:none;stroke:#000000;stroke-width:0.38311666;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       id="path4081"
+       inkscape:connector-curvature="0" />
+    <path
+       d="M -70.693263,57.273389 H 26.848025"
+       style="fill:none;stroke:#000000;stroke-width:0.17039166;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       id="path4083"
+       inkscape:connector-curvature="0" />
+  </g>
+</svg>

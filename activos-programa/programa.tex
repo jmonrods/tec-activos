@@ -1,0 +1,302 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+% Author:  Pablo Alvarado
+%
+% Programa de Licenciatura en Ingeniería en Electrónica
+% Instituto Tecnológico de Costa Rica
+% Curso: Elementos Activos
+% 
+% Phone:   +506 2550 9005
+% email:   palvarado@tec.ac.cr
+%
+% $Id: programa.tex 629 2007-01-31 17:02:08Z palvarado $
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[11pt,oneside,letterpaper]{article}
+
+\usepackage[utf8]{inputenc}             % input encoding
+\usepackage[spanish]{babel}
+
+\usepackage{ifthen}                     % provide if-then-else operators
+
+\usepackage{sty/tecPrograma}
+
+\renewcommand{\CodigoCurso}{EL-2207}
+\renewcommand{\NombreCurso}{Elementos Activos}
+
+
+% Pie de páginas dentro de tablas.
+\usepackage{footnote}
+\usepackage{microtype}
+
+% locally added packages
+\usepackage{booktabs}                   % book type tabulars
+
+\usepackage{longtable}
+\usepackage{tabularx}
+\usepackage{float}
+
+\usepackage{hanging}
+
+% Encabezado
+\pagestyle{fancy}
+\usepackage{ragged2e}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\graphicspath{{./}{./fig/}{./img/}}
+
+\paginaTitulo
+
+\section{Aspectos relativos al plan de estudios}
+
+\subsection{Datos generales}
+
+\hspace*{-\margoffset}
+\begin{tabular}{ll}
+  \textbf{Nombre del curso:} & \NombreCurso \\[1ex]
+  \textbf{Código:} & \CodigoCurso \\[1ex]
+  \textbf{Tipo de curso:} & Teórico \\[1ex]
+  \textbf{Electivo:} & No \\[1ex]
+  \textbf{N"o Créditos:} & 4 \\[1ex]
+  \textbf{N"o horas clase/semana:} & 4\,h  \\[1ex]
+  \textbf{N"o horas extraclase/semana:} & 8\,h \\[1ex]
+  \textbf{\% de las áreas curriculares:} & 100\% Ciencias de la Ingeniería \\[1ex]
+  \textbf{Ubicación en plan de estudios:} & IV Semestre\\[1ex]
+  \textbf{Requisitos:} & EL\,2113 Circuitos Eléctricos en Corriente Continua \\[1ex]
+  \textbf{Correquisitos:} & 
+  EL\,2114 Circuitos Eléctricos en Corriente Alterna \\[1ex]
+  \textbf{El curso es requisito de:} & EL\,3212 Circuitos Discretos\\[1ex]
+  \textbf{Asistencia:} & Obligatoria \\[1ex]
+  \textbf{Suficiencia:} & Si \\[1ex]
+  \textbf{Posibilidad de reconocimiento:} & No \\[1ex]
+  \textbf{Vigencia del programa:} & I Semestre 2023 \\[1ex]
+\end{tabular} 
+
+\msubsection{Descripción\\ General}
+%
+Este curso cubre la teoría básica de los semiconductores y los dispositivos activos semiconductores más importantes, a saber, la unión PN, diodos, los transistores MOSFET y bipolares y sus aplicaciones analógicas y digitales. El estudiante logrará un conocimiento de la teoría básica de dispositivos con semiconductores, sus curvas características, modelos matemáticos, análisis y diseño de circuitos en que son empleados, como base para los cursos de Circuitos Discretos y Diseño Lógico. 
+
+El curso busca desarrollar los siguientes atributos de egreso, de
+acuerdo con la definición de la Agencia Canadiense de Acreditación de
+Ingenierías (CEAB).
+
+\small
+\rowcolors{2}{white}{gray!25}
+\begin{center}
+  \begin{tabular}{lc|c}
+    %\hline
+    \multicolumn{2}{c|}{\textbf{Atributo}}          & \textbf{Nivel} \\
+    \noalign{\hrule height 2pt}
+    Conocimiento Base de Ingeniería                  & & Inicial \\
+    \noalign{\hrule height 1pt}
+    Uso de herramientas de ingeniería                & & Inicial \\
+    \noalign{\hrule height 1pt}
+    Análisis de problemas                            & & Inicial \\
+    \noalign{\hrule height 1pt}
+  \end{tabular}
+\end{center}
+\normalsize
+\rowcolors{2}{white}{white}
+
+%\newpage
+
+\msubsection{Objetivos}
+%
+\textbf{Objetivo general}
+
+Al final del curso el estudiante estará en capacidad de aplicar los conceptos, principios y técnicas matemáticas de análisis de circuitos electrónicos con dispositivos semiconductores.
+
+\textbf{Objetivos específicos}
+
+\begin{compactitem}[nolistsep]
+\item Explicar a nivel electrónico utilizando fundamentos de la física del semiconductor el funcionamiento los siguientes dispositivos semiconductores diodos, transistores MOSFET y bipolar, e interpretar correctamente el funcionamiento de un dispositivo (diodo, transistor, etc) a partir de sus curvas características.
+\item Aplicar técnicas de análisis y diseño en circuitos constituidos por diodos y transistores, mediante el planteamiento de problemas teóricos y prácticos, en torno al tema de semiconductores.
+
+\end{compactitem}
+
+Cada objetivo específico planteado para este curso desarrolla las habilidades de los estudiantes en función de los atributos definidos por el CEAB de la siguiente manera:
+
+\newcounter{NumObjCounter}
+\newcommand{\numObj}{\stepcounter{NumObjCounter}\arabic{NumObjCounter}.}
+
+\small
+\rowcolors{2}{white}{gray!25}
+\begin{longtable}{|p{5mm}@{}p{0.65\textwidth}|p{0.15\textwidth}|p{9mm}|}
+  \hline
+  &\centering \bf{Objetivo} & \bf{\centering{}Atributos} & \bf{\centering{}Nivel$^\ast$} \endhead
+  
+  \noalign{\hrule height 2pt}
+  \numObj & Explicar a nivel electrónico utilizando fundamentos de la física del semiconductor el funcionamiento los siguientes dispositivos semiconductores diodos, transistores MOSFET y bipolar, e interpretar correctamente el funcionamiento de un dispositivo (diodo, transistor, etc) a partir de sus curvas características.
+          & \begin{minipage}[t]{0.99\linewidth}
+              \begin{compactitem}[nolistsep]
+                \item CB
+                \item HI
+                \item AP
+              \end{compactitem}
+            \end{minipage}
+          & \begin{minipage}[t]{0.99\linewidth}
+              \begin{compactitem}[nolistsep]
+                \item I
+                \item I
+                \item I
+              \end{compactitem}
+            \end{minipage} \\
+  \noalign{\hrule height 1pt}
+  \numObj & Aplicar técnicas de análisis y diseño en circuitos constituidos por diodos y transistores, mediante el planteamiento de problemas teóricos y prácticos, en torno al tema de semiconductores.
+            & \begin{minipage}[t]{0.99\linewidth}
+              \begin{compactitem}[nolistsep]
+                \item CB
+                \item HI
+                \item AP
+              \end{compactitem}
+            \end{minipage}
+          & \begin{minipage}[t]{0.99\linewidth}
+              \begin{compactitem}[nolistsep]
+              \item I
+              \item I
+              \item I
+              \end{compactitem}
+            \end{minipage} \\
+  \noalign{\hrule height 1pt}
+  
+\end{longtable}
+
+$\ast$ Nivel de desarrollo de cada atributo: {\bf{I}}nicial, Inter{\bf{M}}edio o {\bf{A}}vanzado.
+
+\normalsize
+\rowcolors{2}{white}{white}
+
+
+\newpage
+\msubsection{Contenido y\\ Cronograma}
+%
+Las 16 semanas que abarcan el curso se distribuyen en los siguientes
+temas:
+\begin{compactenum}[nolistsep]
+\item \textbf{Semiconductores (2 Semanas)}
+  \begin{compactenum}[nolistsep]
+  \item Clasificación de los materiales de acuerdo con la conducción eléctrica: semiconductores, aislantes y conductores
+  \item Semiconductores intrínsecos y extrínsecos, dopado, el concepto de hueco, corriente de huecos, generación y recombinación
+  \item Conceptos básicos: niveles de energía, cristal, bandas de conducción, valencia, nivel de Fermi, ecuación estadística de Fermi-Dirac
+  \item Transporte de portadores de carga: movilidad, conductividad, corriente de difusión, corriente de arrastre, relación de Einstein
+  \item Modelo de bandas de energía: nivel de Fermi, afinidad electrónica, función de trabajo, nivel de vacío, concentración de portadores de carga en función de la energía, deformación de bandas
+  \end{compactenum}
+  
+\item \textbf{Contactos metal-semiconductor y semiconductor-semiconductor (1 Semana)}
+  \begin{compactenum}[nolistsep]
+  \item Contactos metal-semiconductor: Schottky y Óhmico
+  \item La unión PN y electrostática de la juntura
+  \end{compactenum}
+  
+\item \textbf{El diodo (3 Semanas)}
+  \begin{compactenum}[nolistsep]
+  \item Funcionamiento: AC, CD y lineal incremental 
+  \item Modelos del diodo: ideal, tensión constante y real
+  \item Punto de operación, resistencia estática y dinámica
+  \item Circuitos de aplicación
+  \end{compactenum}
+
+\item \textbf{El transistor bipolar BJT (5 Semanas)}
+  \begin{compactenum}[nolistsep]
+  \item Construcción, símbolo y funcionamiento.
+  \item Curvas características y polarización.
+  \item Modelos del BJT (gran señal, Ebers-Moll y pequeña señal).
+  \item Aplicaciones del BJT.
+  \end{compactenum}
+
+\item \textbf{El transistor de efecto de campo MOSFET y la tecnología CMOS (5 Semanas)}
+  \begin{compactenum}[nolistsep]
+  \item Construcción, símbolo, clasificación del MOSFET.
+  \item Funcionamiento, efecto de cuerpo, modulación de canal.
+  \item Curvas características y polarización.
+  \item Modelo del MOSFET para aplicaciones analógicas.
+  \item Aplicaciones analógicas del MOSFET.
+  \item Modelo del MOSFET para aplicaciones digitales.
+  \item Aplicaciones digitales del MOSFET.
+  \end{compactenum}
+  
+\end{compactenum}
+
+
+\newpage
+\section{Aspectos operativos}
+
+\msubsection{Metodología}
+%
+El curso se desarrolla con clases magistrales de manera presencial, complementadas con lecturas, resolución de problemas y tutorías.
+
+\textbf{Clases:} Las clases magistrales serán impartidas en la pizarra, sin grabación. Los apuntes deben ser tomados preferiblemente a mano por cada estudiante, por lo que se recomienda traer un cuaderno, calculadora científica no programable, regla, lápiz y borrador.
+
+\textbf{Lecturas:} Cada semana el profesor asignará lecturas con el material base para estudio, que deberán ser consultadas antes de cada una de las sesiones presenciales. Durante la clase se hará una exposición de los principales temas y ecuaciones, con ejemplos resueltos, y se brindarán ejemplos para que los estudiantes resuelvan bajo la supervisión en el aula.
+
+\textbf{Tutorías:} Las tutorías son opcionales, pero complementan la información teórica vista en clase y permiten despejar dudas con los tutores. Las dudas adicionales pueden ser atendidas sólo durante el espacio de consulta del profesor, de manera presencial.
+
+\textbf{Exámenes:} Los exámenes son presenciales, con una duración de dos horas exactas, y se atenderán consultas únicamente sobre la redacción de la prueba (de forma), no sobre la interpretación o la solución (de fondo). Las consultas serán atendidas únicamente durante los primeros 30 minutos de la prueba, después se debe permanecer en completo silencio. Se permite traer un formulario de una página, por un solo lado, escrito a mano.
+
+\textbf{Tareas:} Las tareas o proyectos serán asignados conforme se estudian los temas, y pueden ser individuales o grupales, a discreción del profesor. Las entregas se deberán hacer en un único archivo zip por medio del tecDigital. No se reciben entregas tardías bajo ninguna circunstancia, si la plataforma se cierra y el trabajo no ha sido presentado se asignará una nota de cero puntos.
+
+\textbf{Ausencias:} En cada clase presencial se tomará asistencia durante los primeros 15 minutos de la lección. El estudiante que acumule hasta un 15\% de ausencias se considerará reprobado (RPA) según la normativa vigente. 
+
+
+\msubsection{Evaluación}
+%
+La evaluación consistirá en tres exámenes individuales escritos y un porcentaje de tareas, desglosados como sigue:
+
+\vspace{5mm}
+\begin{table}[H]
+\centering
+\begin{tabular}{lll}
+  \hline \textbf{Actividad} & \textbf{Valor} & \textbf{Temas} \\
+  \hline Tareas    & 10\% & Unidad 1-5  \\
+  Primer parcial   & 30\% & Unidad 1, 2, 3  \\
+  Segundo parcial  & 30\% & Unidad 4  \\
+  Tercer parcial   & 30\% & Unidad 5  \\
+  \hline 
+\end{tabular}
+\end{table}
+
+\msubsection{Bibliografía}
+%
+\textbf{Obligatoria}
+
+\begin{hangparas}{0.6cm}{1}
+[1] Montero, J. and Ruiz, A. Elementos Activos, Parte I: Semiconductores. Escuela de Ingeniería Electrónica, 1a edición, 2023.
+
+[2] Pierret, R. (1994). Fundamentos de semiconductores: Temas selectos de ingeniería (2da ed.).  Addison-Wesley Iberoamericana.
+
+[3] Neudeck, G. (1993). El diodo PN de unión: Temas selectos de ingeniería (2da ed.).  Addison-Wesley Iberoamericana.
+
+[4] Razavi, B. (2013). Fundamentals of Microelectronics (2nd ed.). Wiley.
+\end{hangparas}
+
+\textbf{Complementaria}
+
+\begin{hangparas}{0.6cm}{1}
+[5] Neudeck, G. (1994). El transistor bipolar de unión: Temas selectos de ingeniería (2da ed.).  Addison-Wesley Iberoamericana.
+
+[6] Pierret, R. (1994). Dispositivos de efecto de campo: Temas selectos de ingeniería (2da ed.).  Addison-Wesley Iberoamericana.
+
+[7] Julián, P. (2013). Dispositivos Semiconductores: Principios y Modelos. Alfaomega.
+
+[8] Boylestad, R. and Nashelsky, L. (2009). Electrónica: Teoría de Circuitos y Dispositivos Electrónicos (10ma ed.), Pearson.
+
+[9] Baker, R. J. (2019). CMOS: Circuit Design, Layout, and Simulation (4th ed.). Wiley.
+\end{hangparas}
+
+\msubsection{Profesores}
+
+\begin{tabular}{lp{106mm}}
+  Grupo 1 & \underline{Dr.\,-Ing.\ Juan José Montero Rodríguez} \\[2mm]
+  & Licenciatura en Ingeniería Electrónica, Tecnológico de Costa Rica. Maestría en Electrónica con énfasis en Sistemas Microelectromecánicos, Tecnológico de Costa Rica. Doctorado en Ingeniería, Universidad Técnica de Hamburgo, Alemania.\\
+Correo-e & jjmontero@itcr.ac.cr    \\
+Consulta & L 7:30-9:20am\\
+Oficina  & K1-422 \\
+Teléfono & 2550-2749 \\ 
+\end{tabular}
+
+\end{document}

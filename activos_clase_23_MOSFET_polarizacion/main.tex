@@ -1,0 +1,419 @@
+\documentclass[t,aspectratio=169]{beamer}
+%\usetheme{Berkeley}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage[american]{circuitikz}
+\usepackage{tcolorbox}
+
+\title{Clase 23}
+\subtitle{Polarización MOSFET}
+\author{Dr.-Ing. Juan José Montero Rodríguez}
+\subject{Elementos Activos}
+\institute{Escuela de Ingeniería Electrónica}
+\date{Semestre II-2023}
+\titlegraphic{\includegraphics[height=8mm]{./figuras/logotec.pdf}}
+
+
+\begin{document}
+
+\begin{frame}{}
+\maketitle
+\end{frame}
+
+
+\begin{frame}{Ecuaciones características del MOSFET}
+
+Corriente de drenador en la región lineal: $V_{GS} > V_{TH}$, $V_{DS} < V_{GS} - V_{TH}$
+
+\begin{tcolorbox}
+\[ I_D = \mu C_{ox}' \dfrac{W}{L} \left( (V_{GS} - V_{TH}) V_{DS} - \dfrac{V_{DS}^2}{2} \right) \]
+\end{tcolorbox}
+
+Corriente de drenador en la región de saturación: $V_{GS} > V_{TH}$, $ V_{DS} > V_{GS} - V_{TH} $
+
+\begin{tcolorbox}
+\[ I_D = \dfrac{1}{2} \mu {}C_{ox}' \dfrac{W}{L} (V_{GS}-V_{TH})^2 \]
+\end{tcolorbox}
+
+\begin{columns}
+	\begin{column}{0.25\textwidth}
+		\centering Transconductancia del proceso:
+		%
+		\[ K' = \mu\cdot{}C_{ox}'\ [A/V^2] \] 
+	\end{column}
+	\begin{column}{0.25\textwidth}
+		\centering Parámetro de transconductancia:
+		%
+		\[ K = \mu\cdot{}C_{ox}' \cdot \dfrac{W}{L} \]
+	\end{column}
+	\begin{column}{0.25\textwidth}
+        \centering Capacitancia de óxido:
+        %
+        \[ C_{ox}' = \dfrac{\epsilon_{ox}}{t_{ox}}\ [F/m^2] \]
+	\end{column}
+	\begin{column}{0.25\textwidth}		
+		$\mu$: movilidad
+		
+		$\epsilon_{ox}$: 3.9$\epsilon_0$
+		
+		$t_{ox}$: espesor de óxido
+	\end{column}
+
+\end{columns}
+\end{frame}
+
+\section{Divisor de tensión}
+\begin{frame}{Polarización por divisor de tensión}
+
+Considere el circuito mostrado en la figura.
+
+\begin{itemize}
+    \item Encuentre una ecuación para la corriente de drenador.
+\end{itemize}
+
+
+\begin{columns}
+
+\begin{column}{0.4\textwidth}
+
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{figuras/mosfet_polarizacion_divisor.png}
+\end{figure}
+
+\end{column}
+
+\begin{column}{0.6\textwidth}
+
+Como la corriente por la compuerta es cero:
+\[ V_G = \dfrac{V_{DD} \times R_2}{R_1 + R_2} \]
+
+La tensión en la terminal de la fuente (S):
+\[ V_S = I_D R_S \]
+
+Por lo tanto, la tensión $V_{GS} = V_G - VS$:
+\[ V_{GS} = \dfrac{V_{DD} \times R_2}{R_1 + R_2} - I_D R_S \]
+
+\end{column}
+
+\end{columns}
+
+\end{frame}
+
+
+\begin{frame}{Polarización por divisor de tensión}
+
+Suponiendo que el transistor está en saturación:
+\[ \begin{cases}
+    & V_{GS} = \dfrac{V_{DD} \times R_2}{R_1 + R_2} - I_D R_S \\
+    & I_D = \dfrac{1}{2} \mu_n C_{ox}' \dfrac{W}{L} (V_{GS} - V_{TH})^2
+\end{cases} \]
+
+Al sustituir la primera ecuación en la segunda:
+\[ I_D = \dfrac{1}{2} \mu_n C_{ox}' \dfrac{W}{L} \left(\dfrac{V_{DD} \times R_2}{R_1 + R_2} - I_D R_S - V_{TH} \right)^2 \]
+
+\begin{itemize}
+    \item Esta es una ecuación cuadrática que tiene dos soluciones para $I_D$.
+    \item Se deben calcular ambas soluciones y comprobar que el transistor esté en saturación.
+\end{itemize}
+
+\end{frame}
+
+
+\section{Ejemplo 1}
+\begin{frame}{Ejemplo 1: Polarización por divisor de tensión}
+
+\begin{columns}
+
+\begin{column}{0.4\textwidth}
+
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{figuras/mosfet_polarizacion_divisor.png}
+\end{figure}
+
+\end{column}
+
+\begin{column}{0.6\textwidth}
+
+1. Determine el valor numérico de la corriente $I_D$ y el valor de la tensión $V_{GS}$, si el transistor presenta los siguientes parámetros:
+%
+\[ V_{TH} = 0.5\ V \]
+%
+\[ \mu_n C_{ox}' = 100\ \mu A/V^2 \]
+%
+\[ \dfrac{W}{L} = \dfrac{5}{0.18} \]
+
+\vspace{5mm}
+2. Calcule cuál es el máximo valor permitido para $R_D$ si el transistor debe permanecer en saturación.
+
+\end{column}
+
+\end{columns}
+
+\end{frame}
+
+
+\begin{frame}{Solución 1: Polarización por divisor de tensión}
+
+\[ I_D = \dfrac{1}{2} \mu_n C_{ox}' \dfrac{W}{L} \left(\dfrac{V_{DD} \times R_2}{R_1 + R_2} - I_D R_S - V_{TH} \right)^2 \]
+%
+\[ I_D = \dfrac{1}{2} \cdot (100\ \mu A/V^2) \cdot \left(\dfrac{5}{0.18}\right) \cdot \left(\dfrac{1.8\ V \times 10\ k\Omega}{4\ k\Omega + 10\ k\Omega} - I_D \cdot 1\ k\Omega - 0.5\ V \right)^2 \]
+
+
+\begin{itemize}
+    \item Para resolver esta ecuación, se puede utilizar la calculadora con el método de Shift+Solve, pero es necesario indicar distintos valores iniciales.
+    \item Otra opción es simplificar al máximo la ecuación, hasta obtener una de la forma $ax^2+bx+c=0$.
+    \item También se puede resolver el sistema de ecuaciones por método iterativo.
+    \item Resuelva la ecuación y obtenga los dos valores para $I_D$.
+\end{itemize}
+
+\vspace{5mm}
+Respuestas: $I_D = 312\ \mu A$, $I_D = 1.98\ mA$.
+
+\end{frame}
+
+
+\begin{frame}{Solución 1: Polarización por divisor de tensión}
+
+Se deben probar ambas soluciones para encontrar cuál es la correcta, y comprobar si el transistor está en saturación.
+
+\vspace{5mm}
+Con la primera solución:
+\[ V_{GS} = V_G - V_S = V_G - I_D R_S = 1.286\ V - 312\ \mu A \times 1\ k\Omega = 0.974\ V \]
+%
+Con la segunda solución:
+\[ V_{GS} = V_G - V_S = V_G - I_D R_S = 1.286\ V - 1.98\ mA \times 1\ k\Omega = -0.694\ V \]
+
+Se observa que la segunda solución no es posible, el transistor estaría apagado.
+
+\vspace{5mm}
+Además se debe comprobar saturación: $V_{DS} > V_{GS} - V_{TH}$.
+
+\end{frame}
+
+
+\begin{frame}{Solución 1: Polarización por divisor de tensión}
+
+Comprobación de saturación:
+\[ V_{DS} > V_{GS} - V_{TH} \]
+\[ V_{DD} - I_D R_D - I_D R_S > V_G - I_D R_S - V_{TH} \]
+
+En esta ecuación no se tiene el valor de $R_D$, el problema solicita calcular el máximo.
+\[ V_{DD} - (V_G - V_{TH}) > I_D R_D \]
+\[ I_D R_D < V_{DD} - (V_G - V_{TH}) \]
+\[ R_D < \dfrac{V_{DD} - (V_G - V_{TH})}{I_D} \]
+\[ R_D < \dfrac{1.8\ V - (1.286\ V - 0.5\ V)}{332\ \mu A} \]
+\[ R_D < 3252\ \Omega \]
+
+\end{frame}
+
+
+\begin{frame}{Solución 1: Solución en Python}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.7\textwidth]{figuras/python_ejemplo_1.png}
+\end{figure}
+    
+\end{frame}
+
+
+\begin{frame}{Solución 1: Comprobación con LTspice}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{figuras/ltspice_ejemplo_1.png}
+\end{figure}
+    
+\end{frame}
+
+
+\section{Autopolarización}
+\begin{frame}{Autopolarización}
+
+Considere el circuito mostrado en la figura.
+
+\begin{itemize}
+    \item Encuentre una ecuación para la corriente de drenador.
+\end{itemize}
+
+\begin{columns}
+
+\begin{column}{0.25\textwidth}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{figuras/mosfet_autopolarizacion.png}
+\end{figure}
+
+\end{column}
+
+\begin{column}{0.75\textwidth}
+
+Observe que este circuito siempre está en saturación:
+\[ I_G = 0 \Rightarrow V_{RG} = 0 \Rightarrow V_D = V_G \Rightarrow V_{DS} = V_{GS} \]
+
+La malla por la compuerta: (observe que $V_{RG} = 0$)
+\[ V_{DD} = I_D R_D + V_{GS} + I_D R_S \]
+
+El sistema de ecuaciones por resolver es:
+\[ \begin{cases}
+    & V_{DD} = I_D R_D + V_{GS} + I_D R_S \\
+    & I_D = \dfrac{1}{2} \mu_n C_{ox}' \dfrac{W}{L} (V_{GS} - V_{TH})^2
+\end{cases} \]
+
+\end{column}
+
+\end{columns}
+
+\end{frame}
+
+
+\begin{frame}{Autopolarización}
+
+El sistema de ecuaciones:
+\[ \begin{cases}
+    & V_{GS} = V_{DD} - I_D R_D - I_D R_S \\
+    & I_D = \dfrac{1}{2} \mu_n C_{ox}' \dfrac{W}{L} (V_{GS} - V_{TH})^2
+\end{cases} \]
+
+Sustituyendo la primera en la segunda:
+\[ I_D = \dfrac{1}{2} \mu_n C_{ox}' \dfrac{W}{L} \left(V_{DD} - I_D R_D - I_D R_S - V_{TH}\right)^2 \]
+
+\begin{itemize}
+    \item De nuevo, esta ecuación cuadrática tiene dos soluciones.
+\end{itemize}
+
+\end{frame}
+
+
+\section{Ejemplo 2}
+\begin{frame}{Ejemplo 2: Autopolarización}
+
+\begin{columns}
+
+\begin{column}{0.3\textwidth}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{figuras/mosfet_ejemplo_2_autopolarizacion.png}
+\end{figure}
+
+\end{column}
+
+\begin{column}{0.7\textwidth}
+
+1. Calcule la corriente de drenador del circuito mostrado, si el transistor tiene los siguientes parámetros:
+\[\mu_n C_{ox}' = 100\ \mu A/V^2\]
+\[ V_{TH}=0.5\ V\]
+
+\vspace{5mm}
+2. Calcule el valor de la tensión $V_{GS}$ en el punto de operación.
+
+\vspace{5mm}
+3. Calcule qué valor de $R_D$ se necesita para reducir la corriente de drenador a la mitad.
+\end{column}
+
+\end{columns}
+
+\end{frame}
+
+
+\begin{frame}{Solución 2: Autopolarización}
+
+1. Solución de la corriente de drenador:
+\[ I_D = \dfrac{1}{2} \mu_n C_{ox}' \dfrac{W}{L} \left(V_{DD} - I_D R_D - I_D R_S - V_{TH}\right)^2 \]
+\[ I_D = \dfrac{1}{2} \cdot (100\ \mu A/V^2) \cdot \left(\dfrac{5}{0.18}\right) \left(1.8\ V - I_D \cdot 1\ k\Omega - I_D \cdot 200\ \Omega - 0.5\ V\right)^2 \]
+
+\begin{itemize}
+    \item La ecuación se resuelve por métodos numéricos para obtener las dos soluciones.
+    \item Observe que en esta ecuación no aparece $R_G$.
+\end{itemize}
+
+\vspace{5mm}
+Respuestas: $I_D = 556.05\ \mu A$, $I_D = 2.111\ mA$.
+
+\vspace{5mm}
+De estas dos soluciones, la correcta es la primera. Observe que con la segunda, la tensión del drenador sería negativa.
+
+\end{frame}
+
+
+\begin{frame}{Solución 2: Autopolarización}
+
+\begin{columns}
+
+\begin{column}{0.5\textwidth}
+
+2. La tensión $V_{GS}$ se calcula despejando de la ecuación de saturación:
+\[ I_D = \dfrac{1}{2} \mu_n C_{ox}' \dfrac{W}{L} \left( V_{GS} - V_{TH} \right)^2 \]
+\[ \dfrac{2 I_D}{\mu_n C_{ox}' \dfrac{W}{L}} = \left( V_{GS} - V_{TH} \right)^2 \]
+\[ \sqrt{\dfrac{2 I_D}{\mu_n C_{ox}' \dfrac{W}{L}}} = \pm ( V_{GS} - V_{TH} ) \]
+
+\end{column}
+
+\begin{column}{0.5\textwidth}
+
+\[ V_{GS} = \sqrt{\dfrac{2 I_D}{\mu_n C_{ox}' \dfrac{W}{L}}} + V_{TH} \]
+\[ V_{GS} = \sqrt{\dfrac{2 \cdot 556.05\ \mu A}{(100\ \mu A/V^2) \left( \dfrac{5}{0.18} \right) }} + 0.5\ V \]
+\[ V_{GS} = 1.133\ V \]
+
+\end{column}
+
+\end{columns}
+
+\end{frame}
+
+
+\begin{frame}{Solución 2: Autopolarización}
+
+Para disminuir la corriente a la mitad, se debe resolver:
+\[ I_D = \dfrac{1}{2} \cdot (100\ \mu A/V^2) \cdot \left(\dfrac{5}{0.18}\right) \left(1.8\ V - I_D \cdot R_D - I_D \cdot 200\ \Omega - 0.5\ V\right)^2 \]
+
+La corriente $I_D = 278\ \mu A$:
+\[ 278\ \mu A = \dfrac{1}{2} \cdot (100\ \mu A/V^2) \cdot \left(\dfrac{5}{0.18}\right) \left(1.8\ V - 278\ \mu A \cdot R_D - 278\ \mu A \cdot 200\ \Omega - 0.5\ V\right)^2 \]
+
+\begin{itemize}
+    \item Esta ecuación se debe resolver para $R_D$.
+\end{itemize}
+
+\vspace{5mm}
+Respuestas: $ R_D = 2.87\ k\Omega$, $6.09\ k\Omega$.
+
+\vspace{5mm}
+Aquí se deben probar ambas soluciones para identificar cuál es consistente.
+
+\end{frame}
+
+
+\begin{frame}{Solución 2: Solución en Python}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.7\textwidth]{figuras/python_ejemplo_2.png}
+\end{figure}
+    
+\end{frame}
+
+
+\begin{frame}{Solución 2: Comprobación con LTspice}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{figuras/ltspice_ejemplo_2.png}
+\end{figure}
+    
+\end{frame}
+
+
+\section{Referencias}
+\begin{frame}{Lecturas recomendadas}
+
+\begin{itemize}
+    \item Razavi, B. (2013). Fundamentals of microelectronics. Chapter 7: CMOS Amplifiers, 2nd ed., pp. 309-313, Wiley.
+\end{itemize}
+
+\end{frame}
+
+\end{document}
